@@ -1,0 +1,959 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('./font/GangwonEduAllBold.woff2') format('woff2'),
+        url('./font/GangwonEduAllBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('./font/GangwonEduAllLight.woff2') format('woff2'),
+        url('./font/GangwonEduAllLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #000;
+    font-family: 'GangwonEduAll';
+}
+
+html,body{ margin: 0; }
+
+h2,h3,p,figure,table{ margin: 0; }
+
+img{ vertical-align: middle; }
+
+a{ text-decoration: none;}
+
+ul,li{
+    margin: 0; padding: 0;
+    list-style-type: none;
+}
+
+
+/* popup page */
+
+.info{
+    width: 100%;
+    position: relative;
+}
+
+
+.info .head{
+    width: 1500px;
+    margin: 20px auto;
+}
+
+.info > .head > h1{
+    text-align: center;
+}
+
+.info .head > h1 > a{}
+
+.info .head > h1 > a > img{}
+
+
+
+.info .info2{
+    width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.info .info2 > div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info .info2 > div > h3{
+    font-size: 40px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.info .info2 > div > a{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.info .info2 > p{
+    font-size: 25px;
+}
+
+.info .info3{
+    width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #555;
+}
+
+.info .info3 > caption{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.info .info3 > thead{
+    width: 90%;
+}
+
+.info .info3 > thead > tr{
+    padding: 30px;
+}
+
+.info .info3 > thead > tr:nth-child(1){}
+
+.info .info3 > thead > tr:nth-child(2){}
+
+.info .info3 > thead > tr > th{
+    font-size: 25px;
+}
+
+.info .info3 > thead > tr:nth-child(1) > th{
+    padding: 12px 0;
+    border-bottom: 1px double #555;
+    font-size: 25px;
+}
+
+.info .info3 > thead > tr:nth-child(2) > th{
+    font-weight: normal;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.info .info3 > thead > tr:nth-child(2) > th > img{
+    padding-right: 10px;
+}
+
+.info .info3 > thead > tr > th{}
+
+.info .info3 > tbody{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.info .info3 > tbody > tr{}
+
+.info .info3 > tbody > tr > td{
+    padding-bottom: 30px;
+}
+
+
+
+
+/* info4 */
+.info .info4{
+    width: 1500px;
+    margin: 100px auto 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.info .info4 > h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* info4 - btn */
+
+.info .info4 .btn{}
+
+.info .info4 .btn > p{}
+
+.info .info4 .btn > span{
+    width: 50%;
+    border-top: 1px solid #000;
+    display: inline-block;
+    position: absolute;
+    right: 10%; top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+
+.info .info4 .btn > p > input{
+    display: none;
+}
+
+.info .info4 .btn > p > label{
+    position: absolute;
+    right: 30%; top: 50%;
+    transform: translateY(-50%);
+
+    
+}
+
+.info .info4 .btn > p > label > span{}
+
+.info .info4 .btn > p > label > span > img{}
+
+
+
+
+/* travel */
+
+.info .travel{
+    width: 1500px;
+    margin: 30px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .travel > li{
+    width: 320px; height: 500px;
+    border: 1px solid #aaa;
+}
+
+.info .travel > li > div{}
+
+.info .travel > li > div > a{}
+
+.info .travel > li > div > a > img{
+    width: 100%;
+}
+
+.info .travel > li > div > a .txt{
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.info .travel > li > div > a .txt > b{
+    font-size: 25px;
+    display: block;
+    padding: 5px 0 10px;
+}
+
+
+/*
+==============================================
+=================반응형 모바일=================
+==============================================
+*/
+@media (min-width:320px) and (max-width:767px) {
+
+
+
+    .info{
+        width: 100%;
+        position: relative;
+    }
+    
+    
+    .info .head{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .info > .head > h1{
+        text-align: center;
+    }
+    
+    .info .head > h1 > a{}
+    
+    .info .head > h1 > a > img{}
+    
+    
+    
+    .info .info2{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
+    .info .info2 > div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .info .info2 > div > h3{
+        font-size: 30px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .info .info2 > div > a{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    
+    .info .info2 > p{
+        font-size: 18px;
+        line-height: 120%;
+    }
+    
+    .info .info3{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+    
+    .info .info3 > caption{
+        text-align: left;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+    .info .info3 > thead{
+        width: 90%;
+    }
+    
+    .info .info3 > thead > tr{
+        padding: 30px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(1){}
+    
+    .info .info3 > thead > tr:nth-child(2){}
+    
+    .info .info3 > thead > tr > th{}
+    
+    .info .info3 > thead > tr:nth-child(1) > th{
+        padding: 12px 0;
+        border-bottom: 1px double #555;
+        font-size: 18px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th{
+        font-size: 0;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th > img{
+        padding-right: 10px;
+    }
+    
+
+
+    
+    .info .info3 > tbody{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .info .info3 > tbody > tr{}
+    
+    .info .info3 > tbody > tr > td{
+        padding-bottom: 30px;
+    }
+    
+    
+    
+    
+    /* info4 */
+    .info .info4{
+        width: 90%;
+        margin: 100px auto 20px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .info .info4 > h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    /* info4 - btn */
+    
+    .info .info4 .btn{}
+    
+    .info .info4 .btn > p{}
+    
+    .info .info4 .btn > span{
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%; top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+    
+    .info .info4 .btn > p > input{
+        display: none;
+    }
+    
+    .info .info4 .btn > p > label{
+        position: absolute;
+        right: 30%; top: 50%;
+        transform: translateY(-50%);
+    
+        
+    }
+    
+    .info .info4 .btn > p > label > span{}
+    
+    .info .info4 .btn > p > label > span > img{
+        width:70%
+
+    }
+    
+    
+    
+    
+    /* travel */
+    
+    .info .travel{
+        width: 90%;
+        margin: 30px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info .travel > li{
+        width: 320px; height: 500px;
+        margin-bottom: 10px;
+        border: 1px solid #aaa;
+    }
+    
+    .info .travel > li:nth-of-type(3),
+    .info .travel > li:nth-of-type(4){
+        display: none;
+    }
+
+    .info .travel > li > div{
+    }
+    
+    .info .travel > li > div > a{}
+    
+    .info .travel > li > div > a > img{
+        width: 100%;
+    }
+    
+    .info .travel > li > div > a .txt{
+        overflow: hidden;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+    
+    .info .travel > li > div > a .txt > b{
+        font-size: 22px;
+        display: block;
+        padding: 5px 0 10px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* 
+==============================================
+=================반응형 타블랫=================
+==============================================
+*/
+@media (min-width:768px) and (max-width:1024px){
+
+
+    .info{
+        width: 100%;
+        position: relative;
+    }
+    
+    
+    .info .head{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .info > .head > h1{
+        text-align: center;
+    }
+    
+    .info .head > h1 > a{}
+    
+    .info .head > h1 > a > img{}
+    
+    
+    
+    .info .info2{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
+    .info .info2 > div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .info .info2 > div > h3{
+        font-size: 30px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .info .info2 > div > a{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    
+    .info .info2 > p{
+        font-size: 20px;
+        line-height: 120%;
+    }
+    
+    .info .info3{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+    
+    .info .info3 > caption{
+        text-align: left;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+    .info .info3 > thead{
+        width: 90%;
+    }
+    
+    .info .info3 > thead > tr{
+        padding: 30px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(1){}
+    
+    .info .info3 > thead > tr:nth-child(2){}
+    
+    .info .info3 > thead > tr > th{}
+    
+    .info .info3 > thead > tr:nth-child(1) > th{
+        padding: 12px 0;
+        border-bottom: 1px double #555;
+        font-size: 18px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th{
+        font-size: 0;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th > img{
+        padding-right: 10px;
+    }
+    
+
+
+    
+    .info .info3 > tbody{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .info .info3 > tbody > tr{}
+    
+    .info .info3 > tbody > tr > td{
+        padding-bottom: 30px;
+    }
+    
+    
+    
+    
+    /* info4 */
+    .info .info4{
+        width: 90%;
+        margin: 100px auto 20px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .info .info4 > h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    /* info4 - btn */
+    
+    .info .info4 .btn{}
+    
+    .info .info4 .btn > p{}
+    
+    .info .info4 .btn > span{
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%; top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+    
+    .info .info4 .btn > p > input{
+        display: none;
+    }
+    
+    .info .info4 .btn > p > label{
+        position: absolute;
+        right: 30%; top: 50%;
+        transform: translateY(-50%);
+    
+        
+    }
+    
+    .info .info4 .btn > p > label > span{}
+    
+    .info .info4 .btn > p > label > span > img{
+        width:70%
+
+    }
+    
+    
+    
+    
+    /* travel */
+    
+    .info .travel{
+        width: 90%;
+        margin: 30px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info .travel > li{
+        width: 250px; height: 430px;
+        margin-bottom: 10px;
+        border: 1px solid #aaa;
+    }
+    
+    .info .travel > li:nth-of-type(4){
+        display: none;
+    }
+
+    .info .travel > li > div{
+    }
+    
+    .info .travel > li > div > a{}
+    
+    .info .travel > li > div > a > img{
+        width: 100%;
+    }
+    
+    .info .travel > li > div > a .txt{
+        overflow: hidden;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+    
+    .info .travel > li > div > a .txt > b{
+        font-size: 22px;
+        display: block;
+        padding: 5px 0 10px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width:1025px) and (max-width:1500px){
+
+
+    .info{
+        width: 100%;
+        position: relative;
+    }
+    
+    
+    .info .head{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .info > .head > h1{
+        text-align: center;
+    }
+    
+    .info .head > h1 > a{}
+    
+    .info .head > h1 > a > img{}
+    
+    
+    
+    .info .info2{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
+    .info .info2 > div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .info .info2 > div > h3{
+        font-size: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .info .info2 > div > a{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    
+    .info .info2 > p{
+        font-size: 23px;
+        line-height: 120%;
+    }
+    
+    .info .info3{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+    
+    .info .info3 > caption{
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+    .info .info3 > thead{
+        width: 90%;
+    }
+    
+    .info .info3 > thead > tr{
+        padding: 30px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(1){}
+    
+    .info .info3 > thead > tr:nth-child(2){}
+    
+    .info .info3 > thead > tr > th{
+    }
+    
+    .info .info3 > thead > tr:nth-child(1) > th{
+        padding: 12px 0;
+        border-bottom: 1px double #555;
+        font-size: 25px;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th{
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+    
+    .info .info3 > thead > tr:nth-child(2) > th > img{
+        padding-right: 10px;
+    }
+    
+
+
+    
+    .info .info3 > tbody{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .info .info3 > tbody > tr{}
+    
+    .info .info3 > tbody > tr > td{
+        padding-bottom: 30px;
+    }
+    
+    
+    
+    
+    /* info4 */
+    .info .info4{
+        width: 90%;
+        margin: 100px auto 20px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .info .info4 > h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    /* info4 - btn */
+    
+    .info .info4 .btn{}
+    
+    .info .info4 .btn > p{}
+    
+    .info .info4 .btn > span{
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%; top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+    
+    .info .info4 .btn > p > input{
+        display: none;
+    }
+    
+    .info .info4 .btn > p > label{
+        position: absolute;
+        right: 30%; top: 50%;
+        transform: translateY(-50%);
+    
+        
+    }
+    
+    .info .info4 .btn > p > label > span{}
+    
+    .info .info4 .btn > p > label > span > img{
+        width:70%
+
+    }
+    
+    
+    
+    
+    /* travel */
+    
+    .info .travel{
+        width: 90%;
+        margin: 30px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info .travel > li{
+        width: 300px; height: 500px;
+        margin-bottom: 10px;
+        border: 1px solid #aaa;
+    }
+
+    .info .travel > li > div{
+    }
+    
+    .info .travel > li > div > a{}
+    
+    .info .travel > li > div > a > img{
+        width: 100%;
+    }
+    
+    .info .travel > li > div > a .txt{
+        overflow: hidden;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+    
+    .info .travel > li > div > a .txt > b{
+        font-size: 25px;
+        display: block;
+        padding: 5px 0 10px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
