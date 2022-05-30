@@ -324,8 +324,8 @@
     }
 
     .market .list>li {
-        width: 80%;
-        height: 350px;
+        width: 45%;
+        height: 400px;
         margin-bottom: 20px;
         border: 1px solid #aaa;
         vertical-align: middle;
@@ -507,7 +507,7 @@
 
 .market .list>li {
     width: 45%;
-    height: 400px;
+    height: 480px;
     margin-bottom: 20px;
     border: 1px solid #aaa;
     vertical-align: middle;
@@ -690,7 +690,7 @@
 
 .market .list>li {
     width: 23%;
-    height: 380px;
+    height: 480px;
     margin: 0 auto 20px;
     border: 1px solid #aaa;
     vertical-align: middle;
