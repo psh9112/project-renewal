@@ -109,11 +109,11 @@
 
 .market .list>li {
     width: 21%;
-    height: 480px;
     margin-bottom: 30px;
     border: 1px solid #aaa;
     vertical-align: middle;
     position: relative;
+    flex-shrink: 0;
 }
 
 .market .list>li>span {}
@@ -125,6 +125,8 @@
 }
 
 .market .list>li>span>a .txt {
+    width: 100%;
+    height: 250px;
     display: block;
     font-weight: normal;
     font-size: 18px;
@@ -239,6 +241,7 @@
         width: 90%;
         margin: 0 auto;
         padding: 0 5%;
+        flex-shrink: 0;
     }
 
     .search .click .city>a {
@@ -271,6 +274,7 @@
         width: 90%;
         margin: 5% auto;
         padding: 0;
+        flex-shrink: 0;
         display: flex;
         justify-content: center;
 
@@ -280,6 +284,7 @@
         width: 80%;
         height: 40px;
         border: 3px solid #FFCC33;
+        flex-shrink: 0;
     }
 
     .search .click .window>span>input {
@@ -291,9 +296,11 @@
         font-size: 12px;
         outline: none;
         font-weight: normal;
+        flex-shrink: 0;
     }
 
     .search .click .window>a {
+        flex-shrink: 0;
         width: 40px;
         height: 40px;
         display: inline-block;
@@ -420,6 +427,7 @@
     width: 95%;
     margin: 0 auto;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .search .click .city>a {
@@ -453,6 +461,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 20px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
 
@@ -462,6 +471,7 @@
     width: 450px;
     height: 55px;
     border: 3px solid #FFCC33;
+    flex-shrink: 0;
 }
 
 .search .click .window>span>input {
@@ -480,6 +490,7 @@
     width: 50px;
     height: 55px;
     background-color: #FFCC33;
+    flex-shrink: 0;
 }
 
 .search .click .window>a>img {
@@ -603,6 +614,7 @@
     width: 95%;
     margin: 0 auto;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .search .click .city>a {
@@ -616,6 +628,7 @@
     border: 1px solid #646464;
     border-radius: 5px;
     font-weight: normal;
+    flex-shrink: 0;
 }
 
 .search .click .city>a:nth-child(1) {
@@ -638,6 +651,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 
 }
 
@@ -645,6 +659,7 @@
     width: 450px;
     height: 55px;
     border: 3px solid #FFCC33;
+    flex-shrink: 0;
 }
 
 .search .click .window>span>input {
@@ -663,6 +678,7 @@
     width: 50px;
     height: 55px;
     background-color: #FFCC33;
+    flex-shrink: 0;
 }
 
 .search .click .window>a>img {
