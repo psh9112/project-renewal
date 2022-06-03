@@ -1,16 +1,22 @@
 @import url('common.css');
 
 
+.giftcard{
+    width: 1600px;
+    margin: 0 auto;
+}
 
+.giftcard > ul{}
 
+.giftcard > ul > li{}
 
+.giftcard > ul > li > p{}
 
+.giftcard > ul > li > div > img{}
 
+.giftcard > ul > li > div > span{}
 
-
-
-
-
+.giftcard > ul > li > div > span > img{}
 
 
 
