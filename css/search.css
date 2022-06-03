@@ -128,7 +128,6 @@
 
 .market .list>li>span>a .txt {
     width: 100%;
-    height: 250px;
     display: block;
     font-weight: normal;
     font-size: 18px;
@@ -165,7 +164,17 @@
     margin-right: 5px;
 }
 
+.market .list>li:nth-of-type(1):hover > .info{
+    display: block;
+}
 
+.market .list>li:nth-of-type(2):hover > .info{
+    display: block;
+}
+
+.market .list>li:nth-of-type(3):hover >.info {
+    display: block;
+}
 
 
 /* arrow */
@@ -200,6 +209,206 @@
     color: #fff;
 } */
 
+
+/* popup page */
+
+.info {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    left: 10%; top: 5%;
+    z-index: 10;
+}
+
+
+.info .info2 {
+    width: 1400px;
+    margin: 50px auto 20px;
+    padding-bottom: 50px;
+}
+
+.info .info2>div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info .info2>div>h3 {
+    font-size: 40px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.info .info2>div>a {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.info .info2>p {
+    font-size: 25px;
+}
+
+.info .info3 {
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #555;
+}
+
+.info .info3>caption {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.info .info3>thead {
+    width: 90%;
+}
+
+.info .info3>thead>tr {
+    padding: 30px;
+}
+
+.info .info3>thead>tr:nth-child(1) {}
+
+.info .info3>thead>tr:nth-child(2) {}
+
+.info .info3>thead>tr>th {
+    font-size: 25px;
+}
+
+.info .info3>thead>tr:nth-child(1)>th {
+    padding: 12px 0;
+    border-bottom: 1px double #555;
+    font-size: 25px;
+}
+
+.info .info3>thead>tr:nth-child(2)>th {
+    font-weight: normal;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.info .info3>thead>tr:nth-child(2)>th>img {
+    padding-right: 10px;
+}
+
+.info .info3>thead>tr>th {}
+
+.info .info3>tbody {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.info .info3>tbody>tr {}
+
+.info .info3>tbody>tr>td {
+    padding-bottom: 30px;
+}
+
+
+
+
+/* info4 */
+.info .info4 {
+    width: 1400px;
+    margin: 100px auto 50px;
+}
+
+.info .info4 .tourist {
+    margin: 100px auto 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+}
+
+.info .info4 .tourist>h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info .info4 .tourist .btn {}
+
+.info .info4 .tourist .btn>p {}
+
+.info .info4 .tourist .btn>span {
+    width: 50%;
+    border-top: 1px solid #000;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+
+.info .info4 .tourist .btn>p>input {
+    display: none;
+}
+
+.info .info4 .tourist .btn>p>label {
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+.info .info4 .tourist .btn>p>label>span {}
+
+.info .info4 .tourist .btn>p>label>span>img {}
+
+
+
+
+/* travel */
+
+.info .info4>ul {
+    width: 1400px;
+    margin: 30px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.info .info4>ul>li {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.info .info4>ul>li>div {
+    width: 320px;
+    border: 1px solid #aaa;
+}
+
+.info .info4>ul>li>div>a {}
+
+.info .info4>ul>li>div>a>img {
+    width: 100%;
+}
+
+.info .info4>ul>li>div>a .txt {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.info .info4>ul>li>div>a .txt>b {
+    font-size: 25px;
+    display: block;
+    padding: 5px 0 10px;
+}
 
 
 
@@ -331,14 +540,13 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 15px;
     }
 
     .market .list>li {
-        width: 45%;
-        height: 400px;
+        width: 90%;
         margin-bottom: 20px;
         border: 1px solid #aaa;
         vertical-align: middle;
@@ -393,6 +601,209 @@
 
 }
 
+/* info */
+@media (min-width:320px) and (max-width:767px) {
+
+
+
+    .info {
+        width: 100%;
+        position: relative;
+    }
+
+
+
+    .info .info2 {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .info .info2>div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .info .info2>div>h3 {
+        font-size: 30px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+
+    .info .info2>div>a {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .info .info2>p {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+
+
+    /* info 3 */
+    .info .info3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+
+    .info .info3>caption {
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .info .info3>thead {
+        width: 100%;
+    }
+
+    .info .info3>thead>tr {
+        padding: 10px;
+    }
+
+    .info .info3>thead>tr:nth-child(1) {}
+
+    .info .info3>thead>tr:nth-child(2) {}
+
+    .info .info3>thead>tr>th {}
+
+    .info .info3>thead>tr:nth-child(1)>th {
+        padding: 5px 0;
+        border-bottom: 1px double #555;
+        font-size: 18px;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th {
+        font-size: 0;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th>img {
+        padding-right: 0px;
+    }
+
+    .info .info3>tbody {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .info .info3>tbody>tr {}
+
+    .info .info3>tbody>tr>td {
+        padding-bottom: 15px;
+    }
+
+    /* info4 */
+    .info .info4 {
+        width: 90%;
+        margin: 10% auto 5%;
+    }
+
+    .info .info4 .tourist {
+        width: 100%;
+        margin: 5% auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        vertical-align: middle;
+    }
+
+    .info .info4 .tourist>h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .info .info4 .tourist .btn {
+        display: none;
+    }
+
+    .info .info4 .tourist .btn>p {}
+
+    .info .info4 .tourist .btn>span {
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+
+    .info .info4 .tourist .btn>p>input {
+        display: none;
+    }
+
+    .info .info4 .tourist .btn>p>label {
+        position: absolute;
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+    }
+
+    .info .info4 .tourist .btn>p>label>span {}
+
+    .info .info4 .tourist .btn>p>label>span>img {
+        width: 80%;
+    }
+
+
+    /* travel */
+
+    .info .info4>ul {
+        width: 100%;
+        margin: 3% auto 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .info .info4>ul>li {
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    .info .info4>ul>li>div {
+        width: 250px;
+        border: 1px solid #aaa;
+    }
+
+    .info .info4>ul>li>div>a {}
+
+    .info .info4>ul>li>div>a>img {
+        width: 100%;
+    }
+
+    .info .info4>ul>li>div>a .txt {
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .info .info4>ul>li>div>a .txt>b {
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+    }
+
+
+
+
+}
 
 /*
 ==============================================
@@ -515,7 +926,7 @@
 }
 
 .market .list {
-    width: 95%;
+    width: 100%;
     margin: 0 auto 50px;
     display: flex;
     justify-content: space-between;
@@ -524,8 +935,7 @@
 }
 
 .market .list>li {
-    width: 45%;
-    height: 480px;
+    width: 100%;
     margin-bottom: 20px;
     border: 1px solid #aaa;
     vertical-align: middle;
@@ -533,7 +943,9 @@
 
 }
 
-.market .list>li>span {}
+.market .list>li>span {
+    width: 100%;
+}
 
 .market .list>li>span>a {}
 
@@ -583,6 +995,226 @@
 
 }
 
+/* info */
+@media (min-width:768px) and (max-width:1024px) {
+
+
+    .info {
+        width: 100%;
+        position: relative;
+    }
+
+
+    .info .head {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .info>.head>h1 {
+        text-align: center;
+    }
+
+    .info .head>h1>a {}
+
+    .info .head>h1>a>img {}
+
+
+
+    .info .info2 {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .info .info2>div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .info .info2>div>h3 {
+        font-size: 30px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+
+    .info .info2>div>a {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+
+    .info .info2>p {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+
+
+    .info .info3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+
+    .info .info3>caption {
+        text-align: left;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    .info .info3>thead {
+        width: 90%;
+    }
+
+    .info .info3>thead>tr {
+        padding: 30px;
+    }
+
+    .info .info3>thead>tr:nth-child(1) {}
+
+    .info .info3>thead>tr:nth-child(2) {}
+
+    .info .info3>thead>tr>th {}
+
+    .info .info3>thead>tr:nth-child(1)>th {
+        padding: 12px 0;
+        border-bottom: 1px double #555;
+        font-size: 18px;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th {
+        font-size: 0;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th>img {
+        padding-right: 10px;
+    }
+
+
+
+
+    .info .info3>tbody {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .info .info3>tbody>tr {}
+
+    .info .info3>tbody>tr>td {
+        padding-bottom: 30px;
+    }
+
+
+
+    /* info4 */
+    .info .info4 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info .info4 .tourist {
+        width: 100%;
+        margin: 10% auto 5%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        vertical-align: middle;
+    }
+
+    .info .info4 .tourist>h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .info .info4 .tourist .btn {}
+
+    .info .info4 .tourist .btn>p {}
+
+    .info .info4 .tourist .btn>span {
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+
+    .info .info4 .tourist .btn>p>input {
+        display: none;
+    }
+
+    .info .info4 .tourist .btn>p>label {
+        position: absolute;
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+    }
+
+    .info .info4 .tourist .btn>p>label>span {}
+
+    .info .info4 .tourist .btn>p>label>span>img {
+        width: 80%;
+    }
+
+
+
+
+    /* travel */
+
+    .info .info4>ul {
+        width: 100%;
+        margin: 5% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .info .info4>ul>li {
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .info .info4>ul>li>div {
+        width: 200px;
+        border: 1px solid #aaa;
+    }
+
+    .info .info4>ul>li>div>a {}
+
+    .info .info4>ul>li>div>a>img {
+        width: 100%;
+    }
+
+    .info .info4>ul>li>div>a .txt {
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .info .info4>ul>li>div>a .txt>b {
+        font-size: 18px;
+        display: block;
+        padding: 5px 0 10px;
+    }
+
+
+
+}
 
 /*
 ==============================================
@@ -713,7 +1345,6 @@
 
 .market .list>li {
     width: 23%;
-    height: 480px;
     margin: 0 auto 20px;
     border: 1px solid #aaa;
     vertical-align: middle;
@@ -766,6 +1397,225 @@
 .market .list>li>span>a .place>span>img {
     margin-right: 3px;
 }
+
+
+
+
+
+}
+
+/* info */
+@media (min-width:1025px) and (max-width:1500px) {
+
+
+    .info {
+        width: 100%;
+        position: relative;
+    }
+
+
+    .info .head {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .info>.head>h1 {
+        text-align: center;
+    }
+
+    .info .head>h1>a {}
+
+    .info .head>h1>a>img {}
+
+
+
+    .info .info2 {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .info .info2>div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .info .info2>div>h3 {
+        font-size: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+
+    .info .info2>div>a {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+
+    .info .info2>p {
+        font-size: 23px;
+        line-height: 120%;
+    }
+
+    .info .info3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #555;
+    }
+
+    .info .info3>caption {
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    .info .info3>thead {
+        width: 90%;
+    }
+
+    .info .info3>thead>tr {
+        padding: 30px;
+    }
+
+    .info .info3>thead>tr:nth-child(1) {}
+
+    .info .info3>thead>tr:nth-child(2) {}
+
+    .info .info3>thead>tr>th {}
+
+    .info .info3>thead>tr:nth-child(1)>th {
+        padding: 12px 0;
+        border-bottom: 1px double #555;
+        font-size: 25px;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px;
+        vertical-align: middle;
+    }
+
+    .info .info3>thead>tr:nth-child(2)>th>img {
+        padding-right: 10px;
+    }
+
+
+
+
+    .info .info3>tbody {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .info .info3>tbody>tr {}
+
+    .info .info3>tbody>tr>td {
+        padding-bottom: 30px;
+    }
+
+
+
+    /* info4 */
+    .info .info4 {
+        width: 90%;
+        margin: 100px auto 50px;
+    }
+
+    .info .info4 .tourist {
+        width: 100%;
+        margin: 50px auto 25px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        vertical-align: middle;
+    }
+
+    .info .info4 .tourist>h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .info .info4 .tourist .btn {}
+
+    .info .info4 .tourist .btn>p {}
+
+    .info .info4 .tourist .btn>span {
+        width: 50%;
+        border-top: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -10;
+    }
+
+    .info .info4 .tourist .btn>p>input {
+        display: none;
+    }
+
+    .info .info4 .tourist .btn>p>label {
+        position: absolute;
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+    }
+
+    .info .info4 .tourist .btn>p>label>span {}
+
+    .info .info4 .tourist .btn>p>label>span>img {}
+
+
+
+
+    /* travel */
+
+    .info .info4>ul {
+        width: 100%;
+        margin: 30px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .info .info4>ul>li {
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .info .info4>ul>li>div {
+        width: 320px;
+        border: 1px solid #aaa;
+    }
+
+    .info .info4>ul>li>div>a {}
+
+    .info .info4>ul>li>div>a>img {
+        width: 100%;
+    }
+
+    .info .info4>ul>li>div>a .txt {
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .info .info4>ul>li>div>a .txt>b {
+        font-size: 25px;
+        display: block;
+        padding: 5px 0 10px;
+    }
 
 
 

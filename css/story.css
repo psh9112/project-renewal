@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'GangwonEduAll';
-    src: url('GangwonEduAllBold.woff2') format('woff2'),
-        url('GangwonEduAllBold.woff') format('woff');
+    src: url('./font/GangwonEduAllBold.woff2') format('woff2'),
+        url('./font/GangwonEduAllBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'GangwonEduAll';
-    src: url('GangwonEduAllLight.woff2') format('woff2'),
-        url('GangwonEduAllLight.woff') format('woff');
+    src: url('./font/GangwonEduAllLight.woff2') format('woff2'),
+        url('./font/GangwonEduAllLight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;

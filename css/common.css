@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'GangwonEduAll';
-    src: url('GangwonEduAllBold.woff2') format('woff2'),
-        url('GangwonEduAllBold.woff') format('woff');
+    src: url('./font/GangwonEduAllBold.woff2') format('woff2'),
+        url('./font/GangwonEduAllBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'GangwonEduAll';
-    src: url('GangwonEduAllLight.woff2') format('woff2'),
-        url('GangwonEduAllLight.woff') format('woff');
+    src: url('./font/GangwonEduAllLight.woff2') format('woff2'),
+        url('./font/GangwonEduAllLight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -268,7 +268,7 @@ footer .bottom .address {
 
 .menu-title .sub {
     width: 1600px;
-    margin: 10px auto 70px;
+    margin: 10px auto 50px;
     color: #000;
     text-align: center;
     font-weight: normal;
@@ -340,7 +340,9 @@ footer .bottom .address {
 
 
     .top .menu>li:nth-of-type(1),
-    .top .menu>li:nth-of-type(2){
+    .top .menu>li:nth-of-type(2),
+    .top .menu>li:nth-of-type(3),
+    .top .menu>li:nth-of-type(4){
         display: none;
     }
 
@@ -617,7 +619,7 @@ footer .bottom .address {
         position: relative;
     }
 
-    .top .menu>li:nth-of-type(3) {
+    .top .menu>li:nth-of-type(5) {
         display: none;
     }
 
@@ -625,10 +627,10 @@ footer .bottom .address {
     .top .menu>li>a {
         display: inline-block;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 5px;
         padding-bottom: 10%;
         text-transform: uppercase;
-        font-size: 25px;
+        font-size: 23px;
         text-align: center;
     }
 
