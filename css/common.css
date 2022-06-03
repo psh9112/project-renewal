@@ -341,8 +341,7 @@ footer .bottom .address {
 
     .top .menu>li:nth-of-type(1),
     .top .menu>li:nth-of-type(2),
-    .top .menu>li:nth-of-type(3),
-    .top .menu>li:nth-of-type(4){
+    .top .menu>li:nth-of-type(3){
         display: none;
     }
 
@@ -619,7 +618,7 @@ footer .bottom .address {
         position: relative;
     }
 
-    .top .menu>li:nth-of-type(5) {
+    .top .menu>li:nth-of-type(4) {
         display: none;
     }
 
