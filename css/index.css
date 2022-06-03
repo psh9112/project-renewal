@@ -203,11 +203,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .page4 .photo .gellery>a {
+    width: 330px;
+    padding: 0 20px;
     flex-shrink: 0;
-    overflow: hidden;
     display: inline-block;
 }
 
@@ -222,7 +224,7 @@
 
 
 .page4 .photo .btn {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     position: absolute;
     left: 0%; top: 50%;
