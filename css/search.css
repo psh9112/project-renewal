@@ -177,6 +177,11 @@
     display: block;
 }
 
+.market .list>li:nth-of-type(4):hover >.info {
+    display: block;
+}
+
+
 
 /* popup page */
 
@@ -188,6 +193,7 @@
     position: fixed;
     left: 10%; top: 5%;
     z-index: 10;
+    border: 2px solid #555;
 }
 
 

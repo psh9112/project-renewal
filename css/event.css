@@ -84,7 +84,10 @@
 }
 
 .event > ul > li > p{
-    padding: 10px 5px;
+    padding: 5px;
+    color: #555;
+    font-weight: normal;
+    text-align: center;
 }
 
 
