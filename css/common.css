@@ -433,7 +433,7 @@ footer .bottom .address {
         z-index: 10;
     }
 
-    picture>img {
+    picture > a >img {
         width: 100%;
         opacity: 0.8;
     }
