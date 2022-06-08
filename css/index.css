@@ -5,7 +5,7 @@
 
 .page1 {
     width: 100%;
-    margin: 180px auto;
+    margin: 200px auto;
 }
 
 
@@ -13,6 +13,11 @@
     width: 1600px;
     margin: 0 auto;
     text-align: center;
+    animation: title 3s forwards;
+}
+
+@keyframes title{
+    0% {transform: scale(0.5);}
 }
 
 .page1 .main-title>b {

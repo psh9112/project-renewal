@@ -99,7 +99,7 @@
 }
 
 .market .list {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -108,7 +108,7 @@
 }
 
 .market .list>li {
-    width: 21%;
+    width: 23%;
     margin-bottom: 30px;
     border: 1px solid #aaa;
     vertical-align: middle;

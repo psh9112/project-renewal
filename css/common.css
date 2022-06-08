@@ -81,6 +81,7 @@ header {
 }
 
 .top .menu {
+    width: 35%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -89,25 +90,34 @@ header {
 
 .top .menu>li {
     width: 100%;
+    padding: 0 30px;
     margin: 0 auto;
     position: relative;
+    text-align: center;
+    display: inline-block;
 }
+
+.top .menu>li:nth-of-type(4) {
+    display: none;
+    padding: 0;
+}
+
 
 .top .menu>li>a {
     display: inline-block;
     margin: 0 auto;
-    padding: 0 50px 10px;
-    text-transform: uppercase;
     font-size: 30px;
-    text-align: center;
 }
+
+
 
 .top .menu>li>div {
     background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 auto;
     padding: 10%;
+    text-align: center;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0; bottom: 0;
     transform: translateY(100%);
     vertical-align: middle;
     display: none;
@@ -117,12 +127,12 @@ header {
 .top .menu>li:hover>div {
     width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 .top .menu>li>div>a {
     text-align: center;
     display: block;
-    text-transform: uppercase;
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: normal;
@@ -130,12 +140,15 @@ header {
 
 
 .top .menu>li .trigger {
+    display: inline-block;
     margin: 0 auto;
+    padding: 0;
 }
 
 .top .menu>li .trigger>span {
     width: 25px;
     height: 9px;
+    margin: 0 auto;
     display: block;
     border-bottom: 3px solid #000;
 }
@@ -518,7 +531,6 @@ footer .bottom .address {
 
 }
 
-
 /* sub-page */
 @media (min-width:320px) and (max-width:767px) {
 
@@ -782,8 +794,6 @@ footer .bottom .address {
 
 }
 
-
-
 /* sub-page */
 @media (min-width:768px) and (max-width:1024px) {
 
@@ -1040,8 +1050,6 @@ footer .bottom .address {
 
 
 }
-
-
 
 /* sub-page */
 @media (min-width:1025px) and (max-width:1600px) {
