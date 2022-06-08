@@ -358,6 +358,10 @@ footer .bottom .address {
         display: none;
     }
 
+    .top .menu>li:nth-of-type(4){
+        display: none;
+    }
+
     .top .menu>li {
         width: 100%;
         margin: 0 auto;
