@@ -5,7 +5,7 @@
 
 .page1 {
     width: 100%;
-    margin: 200px auto;
+    margin: 200px auto 300px;
 }
 
 
@@ -13,7 +13,7 @@
     width: 1600px;
     margin: 0 auto;
     text-align: center;
-    animation: title 3s forwards;
+    animation: title 4s forwards;
 }
 
 @keyframes title{
@@ -23,7 +23,7 @@
 .page1 .main-title>b {
     width: 100%;
     display: block;
-    font-size: 120px;
+    font-size: 110px;
     margin-bottom: 30px;
 }
 
@@ -101,7 +101,7 @@
 .page3 .oneline .title02>b {
     display: block;
     text-align: center;
-    font-size: 90px;
+    font-size: 85px;
 }
 
 .page3 .oneline .title02>span {
@@ -172,7 +172,7 @@
 .page4 .story>b {
     display: block;
     text-align: center;
-    font-size: 90px;
+    font-size: 85px;
 }
 
 .page4 .story>span {
@@ -184,7 +184,7 @@
 }
 
 .page4 .plus {
-    width: 90%;
+    width: 80%;
     margin: 100px auto 20px;
     text-align: right;
 }
@@ -203,7 +203,7 @@
 }
 
 .page4 .photo .gellery {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -229,7 +229,7 @@
 
 
 .page4 .photo .btn {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     left: 0%; top: 50%;
@@ -251,7 +251,9 @@
 }
 
 
-.page4 .photo .btn>button>img {}
+.page4 .photo .btn>button>img {
+    width: 50%;
+}
 
 
 
@@ -470,7 +472,6 @@
         justify-content: center;
         align-items: center;
         vertical-align: middle;
-        flex-wrap: wrap;
     }
 
     .page4 .photo .gellery>a {
@@ -726,16 +727,15 @@
     }
 
     .page4 .photo .gellery {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     .page4 .photo .gellery>a {
-        width: 45%;
+        width: 50%;
         margin: 2%;
         flex-shrink: 0;
     }
@@ -767,6 +767,7 @@
     }
 
     .page4 .photo .btn>button>img {
+        width: 30%;
         display: inline-block;
     }
 
@@ -791,7 +792,7 @@
 
     .page1 {
         width: 100%;
-        margin: 150px auto 200px;
+        margin: 150px auto 250px;
     }
 
 
