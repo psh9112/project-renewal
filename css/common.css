@@ -81,7 +81,7 @@ header {
 }
 
 .top .menu {
-    width: 35%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -99,7 +99,6 @@ header {
 
 .top .menu>li:nth-of-type(4) {
     display: none;
-    padding: 0;
 }
 
 
@@ -266,8 +265,10 @@ footer .bottom .address {
 
 .menu-title {
     width: 100%;
-    padding: 20px;
-    background-color: #ddd;
+    padding: 60px;
+    background: url('../img/background/banner.jpg'), no-repeat;
+    background-size: cover;
+    background-position-y:top;
     position: relative;
 }
 
@@ -275,7 +276,7 @@ footer .bottom .address {
     width: 1600px;
     margin: 50px auto 20px;
     color: #000;
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -283,6 +284,7 @@ footer .bottom .address {
     width: 1600px;
     margin: 10px auto 50px;
     color: #000;
+    font-size: 35px;
     text-align: center;
     font-weight: normal;
 }
@@ -361,6 +363,7 @@ footer .bottom .address {
     .top .menu>li:nth-of-type(4){
         display: block;
     }
+
 
     .top .menu>li {
         width: 100%;
@@ -620,7 +623,7 @@ footer .bottom .address {
     }
 
     .top .menu {
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -645,7 +648,7 @@ footer .bottom .address {
         padding: 0 5px;
         padding-bottom: 10%;
         text-transform: uppercase;
-        font-size: 23px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -701,7 +704,7 @@ footer .bottom .address {
         z-index: 10;
     }
 
-    picture>img {
+    picture > a > img {
         width: 80%;
     }
 
@@ -885,6 +888,7 @@ footer .bottom .address {
     }
 
     .top .menu {
+        width: 70%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -900,7 +904,7 @@ footer .bottom .address {
     .top .menu>li>a {
         display: inline-block;
         margin: 0 auto;
-        padding: 0 30px 10px;
+        padding: 0;
         text-transform: uppercase;
         font-size: 25px;
         text-align: center;
@@ -955,7 +959,7 @@ footer .bottom .address {
         z-index: 10;
     }
 
-    picture>img {
+    picture >a >img {
         width: 100%;
     }
 
