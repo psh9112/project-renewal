@@ -617,7 +617,7 @@ footer .bottom .address {
 
     .top {
         width: 90%;
-        margin: 5% auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         vertical-align: middle;
@@ -878,85 +878,57 @@ footer .bottom .address {
 
     header {
         width: 100%;
+        position: fixed;
+        z-index: 99;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
     }
-
+    
     .top {
-        width: 90%;
-        margin: 30px auto;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
         vertical-align: middle;
     }
-
-    .top>h1 {}
-
-    .top>h1>a {}
-
-    .top>h1>a>img {
-        width: 100%;
+    
+    .top>h1 {
+        text-align: center;
     }
-
+    
+    .top>h1>a {}
+    
+    .top>h1>a>img {
+        width: 80%;
+    }
+    
     .top .menu {
-        width: 70%;
+        width: 50%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         vertical-align: middle;
     }
-
+    
     .top .menu>li {
         width: 100%;
+        padding: 0 30px;
         margin: 0 auto;
         position: relative;
+        text-align: center;
+        display: inline-block;
     }
-
+    
+    .top .menu>li:nth-of-type(4) {
+        display: none;
+    }
     .top .menu>li>a {
         display: inline-block;
         margin: 0 auto;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 25px;
-        text-align: center;
+        font-size: 23px;
     }
-
-    .top .menu>li>div {
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 10%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        transform: translateY(100%);
-        vertical-align: middle;
-        display: none;
-        z-index: 999;
-    }
-
-    .top .menu>li:hover>div {
-        width: 100%;
-        display: block;
-    }
-
-    .top .menu>li>div>a {
-        text-align: center;
-        display: block;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-        font-size: 15px;
-        font-weight: normal;
-    }
-
-
-    .top .menu>li .trigger {
-        margin: 0 auto;
-    }
-
-    .top .menu>li .trigger>span {
-        width: 23px;
-        height: 9px;
-        display: block;
-        border-bottom: 3px solid #000;
-    }
-
+    
 
 
     /* top_btn */
