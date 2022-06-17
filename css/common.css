@@ -112,7 +112,7 @@ header {
 .top .menu>li>a {
     display: inline-block;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -338,7 +338,7 @@ footer .bottom .address {
 
     .top {
         width: 90%;
-        margin: 5% auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         vertical-align: middle;
