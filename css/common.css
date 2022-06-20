@@ -62,16 +62,16 @@ li {
 
 header {
     width: 100%;
+    padding: 30px;
     position: fixed;
     z-index: 99;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .top {
     width: 1600px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -80,8 +80,19 @@ header {
 .top>h1 {
     text-align: center;
 }
+.top>h1>a{
+    font-size: 35px;
+}
 
-.top>h1>a {}
+.top h1 a span{
+    font-size: 35px;
+}
+.top>h1>a span:nth-child(1){
+    color: rgb(255, 136, 0);
+}
+.top>h1>a span:nth-child(2){
+    color: rgb(255,192,0);
+}
 
 .top>h1>a>img {
     width: 80%;
@@ -112,7 +123,7 @@ header {
 .top .menu>li>a {
     display: inline-block;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 

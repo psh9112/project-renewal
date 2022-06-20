@@ -262,6 +262,7 @@
 .page4 .slide .slide-list>a {
     width: 100%;
     padding: 0 20px;
+    overflow: hidden;
 }
 
 .page4 .slide>img {
