@@ -22,3 +22,48 @@ $('header .top a').click(function(){
 
 $('header').load('inc.html header .top');
 $('footer').load('inc.html footer .bottom');
+
+
+// header
+
+let scrollState = { y: 0, y2: 0, state: 'down' };
+
+function scrollFun() {
+    scrollState.y = $(window).scrollTop();
+
+    if (scrollState.y > scrollState.y2) {
+        scrollState.state = true;
+    } else {
+        scrollState.state = false;
+    }
+
+    scrollState.y == scrollState.y2
+};
+
+function headerFun() {
+
+    scrollFun();
+
+    if (scrollState.state) {
+        $('header').addClass('active');
+    } else {
+        $('header').removeClass('active');
+    }
+
+};
+
+$(window).on('scroll', headerFun);
+
+
+// top btn
+
+let posY;
+let winH = $(window).height(); //window의 높이값
+let clickTop;
+
+
+$('picture').on('click', function () {
+
+    clickTop = $(window).offsetTop();
+
+});

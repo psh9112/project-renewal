@@ -55,6 +55,7 @@ li {
     color: #000;
     font-family: 'GangwonEduAll';
     font-weight: bold;
+    vertical-align: top;
 }
 
 
@@ -65,7 +66,12 @@ header {
     padding: 30px;
     position: fixed;
     z-index: 99;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(255,255,255);
+    transition: .5s;
+}
+
+header.active{
+    transform: translateY(-100%);
 }
 
 .top {
@@ -177,9 +183,9 @@ header {
 
 picture {
     position: fixed;
-    right: 5%;
-    bottom: 10%;
-    z-index: 10;
+    right: 2%;
+    bottom: 3%;
+    z-index: 5;
 }
 
 picture > a > img {
