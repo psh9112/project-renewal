@@ -117,16 +117,13 @@
 }
 
 
-.market .list>li>span {}
 
-.market .list>li>span>a {}
-
-.market .list>li>span>a>img {
+.market .list>li .popup img {
     width: 100%;
 }
 
 
-.market .list>li>span>a .txt {
+.market .list>li .popup .txt {
     width: 100%;
     display: block;
     font-weight: normal;
@@ -136,97 +133,91 @@
     color: #777;
 }
 
-.market .list>li>span>a .txt>b {
+.market .list>li .popup .txt >b {
     display: block;
     padding-bottom: 10px;
 }
 
-.market .list>li>span>a .place {
+.market .list > li .popup .place {
     width: 100%;
-    font-size: 16px;
     font-weight: normal;
     padding: 10px;
     color: #555;
     background-color: #ddd;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
     vertical-align: middle;
 }
 
-.market .list>li>span>a .place>span {
-    font-size: 15px;
+.market .list > li .popup .place > span {
+    display: block;
     color: #555;
     font-weight: normal;
+    font-size: 15px;
+}
+.market .list > li .popup .place > span:nth-child(1) {
+    font-size: 16px;
+}
+.market .list > li .popup .place > span:nth-child(2) {
+    width: 30%;
+    text-align: end;
 }
 
-.market .list>li>span>a .place>span>img {
+
+.market .list>li .popup .place >span > img {
+    width: 15%;
     margin-right: 5px;
 }
 
-.market .list>li:nth-of-type(1):hover > .info{
+.market .list > li.active .info{
     display: block;
 }
-
-.market .list>li:nth-of-type(2):hover > .info{
-    display: block;
-}
-
-.market .list>li:nth-of-type(3):hover >.info {
-    display: block;
-}
-
-.market .list>li:nth-of-type(4):hover >.info {
-    display: block;
-}
-
-
 
 /* popup page */
 
-.info {
-    width: 1600px;
-    margin: 0 auto;
+.market .list > li .info {
+    width: 1500px;
+    padding: 30px;
     background-color: #fff;
     display: none;
     position: fixed;
-    left: 10%; top: 5%;
+    left: 50%; top: 5%;
+    transform: translateX(-50%);
     z-index: 10;
     border: 2px solid #555;
 }
 
 
-.info .info2 {
+.market .list > li .info .info2 {
     width: 1400px;
-    margin: 50px auto 20px;
+    margin: 0 auto 20px;
     padding-bottom: 50px;
 }
 
-.info .info2>div {
+.market .list > li .info .info2>div {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.info .info2>div>h3 {
+.market .list > li .info .info2>div>h3 {
     font-size: 40px;
     padding-right: 50px;
     padding-bottom: 20px;
 }
 
-.info .info2>div>a {
+.market .list > li .info .info2>div>a {
     font-size: 20px;
     font-weight: normal;
 }
 
 
-.info .info2>p {
+.market .list > li .info .info2>p {
     font-size: 25px;
 }
 
-.info .info3 {
+.market .list > li .info .info3 {
     width: 1400px;
     margin: 0 auto;
     text-align: center;
@@ -234,69 +225,61 @@
     border: 1px solid #555;
 }
 
-.info .info3>caption {
+.market .list > li .info .info3>caption {
     text-align: left;
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
-.info .info3>thead {
+.market .list > li .info .info3>thead {
     width: 90%;
 }
 
-.info .info3>thead>tr {
+.market .list > li .info .info3>thead>tr {
     padding: 30px;
 }
 
-.info .info3>thead>tr:nth-child(1) {}
-
-.info .info3>thead>tr:nth-child(2) {}
-
-.info .info3>thead>tr>th {
+.market .list > li .info .info3>thead>tr>th {
     font-size: 25px;
 }
 
-.info .info3>thead>tr:nth-child(1)>th {
+.market .list > li .info .info3>thead>tr:nth-child(1)>th {
     padding: 12px 0;
     border-bottom: 1px double #555;
     font-size: 25px;
 }
 
-.info .info3>thead>tr:nth-child(2)>th {
+.market .list > li .info .info3>thead>tr:nth-child(2)>th {
     font-weight: normal;
     padding: 20px;
     vertical-align: middle;
 }
 
-.info .info3>thead>tr:nth-child(2)>th>img {
+.market .list > li .info .info3>thead>tr:nth-child(2)>th>img {
     padding-right: 10px;
 }
 
-.info .info3>thead>tr>th {}
+.market .list > li .info .info3>thead>tr>th {}
 
-.info .info3>tbody {
+.market .list > li .info .info3>tbody {
     width: 90%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
-.info .info3>tbody>tr {}
-
-.info .info3>tbody>tr>td {
+.market .list > li .info .info3>tbody>tr>td {
     padding-bottom: 30px;
 }
-
-
 
 
 /* info4 */
 .info .info4 {
     width: 1400px;
-    margin: 100px auto 50px;
+    margin: 30px auto 0;
 }
 
 .info .info4 .tourist {
-    margin: 100px auto 50px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -319,8 +302,7 @@
     border-top: 1px solid #000;
     display: inline-block;
     position: absolute;
-    right: 10%;
-    top: 50%;
+    right: 10%; top: 50%;
     transform: translateY(-50%);
     z-index: -10;
 }
@@ -349,7 +331,7 @@
 
 .info .info4>ul {
     width: 1400px;
-    margin: 30px auto 100px;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
