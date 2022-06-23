@@ -4,8 +4,10 @@
 /* page1-1 */
 
 .page1 {
-    width: 100%; height: 100%;
-    margin: 0; padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     position: relative;
     transition: 1s;
@@ -13,7 +15,8 @@
 
 
 .page1 .video {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .page1 .video::before {
@@ -22,17 +25,20 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    left: 0; top: 0;
+    left: 0;
+    top: 0;
     z-index: 1;
     clear: both;
 }
 
 .page1 .video video {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .page1 .video video source {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .page1 .main-title {
@@ -58,26 +64,27 @@
     width: 100%;
     display: block;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 120%;
 }
 
-.page1 .click{
+.page1 .click {
     margin: 0 auto;
     text-align: center;
     position: absolute;
-    left: 50%; bottom: 15%;
+    left: 50%;
+    bottom: 15%;
     transform: translateX(-50%);
     z-index: 2;
 }
 
-.page1 .click a{
+.page1 .click a {
     display: block;
     color: #fff;
     font-weight: normal;
 }
 
-.page1 .click img{
+.page1 .click img {
     margin: 0 auto;
     width: 65%;
     display: block;
@@ -87,14 +94,16 @@
 /* page1-2 */
 
 .page2 {
-    width: 100%; height: 100vh;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
     margin-bottom: 200px;
     transform: scale(0.5);
     opacity: 0;
-    transition: 1s;
+    transition: 1.5s;
 }
 
-.page2.active{
+.page2.active {
     opacity: 1;
     transform: scale(1);
 }
@@ -129,7 +138,7 @@
     color: #fff;
     display: block;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 120%;
 }
 
@@ -154,7 +163,7 @@
 .page3 .oneline .title02>b {
     display: block;
     text-align: center;
-    font-size: 85px;
+    font-size: 90px;
 }
 
 .page3 .oneline .title02>span {
@@ -162,7 +171,7 @@
     text-align: center;
     padding-top: 25px;
     margin-bottom: 100px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: normal;
     color: #000;
 }
@@ -224,7 +233,7 @@
 .page4 .story>b {
     display: block;
     text-align: center;
-    font-size: 85px;
+    font-size: 90px;
 }
 
 .page4 .story>span {
@@ -232,7 +241,7 @@
     text-align: center;
     padding-top: 25px;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .page4 .plus {
@@ -246,7 +255,7 @@
     font-weight: normal;
 }
 
-.page4 .photo{
+.page4 .photo {
     width: 1600px;
     overflow: hidden;
     text-align: center;
@@ -284,7 +293,7 @@
     overflow: hidden;
 }
 
-.page4 .slide .slick-slide a{
+.page4 .slide .slick-slide a {
     overflow: hidden;
 }
 
@@ -297,35 +306,39 @@
     transform: scale(1.1);
 }
 
-.page4 .slide .slick-list{
+.page4 .slide .slick-list {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.page4 .slide .slick-arrow{
-    width: 100px; height: 100px;
+.page4 .slide .slick-arrow {
+    width: 100px;
+    height: 100px;
     font-size: 0;
     margin: 0 auto;
     border: none;
     outline: none;
     background: none;
 }
-.page4 .slide .slick-prev{
+
+.page4 .slide .slick-prev {
     position: absolute;
-    left:0; top:50%;
+    left: 0;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 5;
 }
 
 .page4 .slide .slick-next {
     position: absolute;
-    right:0%; top:50%;
+    right: 0%;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 5;
 }
 
-.page4 .slide .slick-arrow img{
+.page4 .slide .slick-arrow img {
     width: 100%;
 }
 
@@ -345,7 +358,7 @@
 =================반응형 모바일=================
 ==============================================
 */
-
+/* main */
 @media (min-width:320px) and (max-width:767px) {
 
     /* page1-1 */
@@ -363,6 +376,7 @@
 
     .page1 .video::before {
         content: '';
+        clear: both;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
@@ -370,7 +384,6 @@
         left: 0;
         top: 0;
         z-index: 1;
-        clear: both;
     }
 
     .page1 .video video {
@@ -391,21 +404,44 @@
         text-align: center;
         position: absolute;
         left: 50%;
-        top: 55%;
+        top: 50%;
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
     }
 
     .page1 .main-title>b {
         display: block;
-        font-size: 43px;
+        font-size: 30px;
         margin-bottom: 3%;
     }
 
     .page1 .main-title>span {
         display: block;
         font-size: 15px;
-        line-height: 110%;
+        line-height: 100%;
+    }
+
+    .page1 .click {
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 2%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .page1 .click a {
+        font-size: 10px;
+        display: block;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .page1 .click img {
+        margin: 0 auto;
+        width: 15%;
+        display: block;
     }
 
 
@@ -414,7 +450,17 @@
 
     .page2 {
         width: 100%;
-        margin: 0 auto 15%;
+        height: 100%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual {
@@ -428,7 +474,7 @@
     }
 
     .page2 .visual .title01 {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         position: absolute;
@@ -442,7 +488,7 @@
         margin: 0;
         display: block;
         color: #fff;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .page2 .visual .title01>span {
@@ -450,7 +496,7 @@
         color: #fff;
         display: block;
         font-size: 13px;
-        line-height: 110%;
+        line-height: 100%;
     }
 
     .page2 .visual .title01>span {
@@ -476,7 +522,7 @@
     .page3 .oneline .title02>b {
         display: block;
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .page3 .oneline .title02>span {
@@ -536,10 +582,140 @@
 
     /* page4 */
 
+    .page4 {
+        width: 95%;
+        margin: 0 auto 15%;
+    }
 
+    .page4 .story {
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .page4 .story>b {
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
 
+    .page4 .story>span {
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: normal;
+        font-size: 13px;
+    }
 
+    .page4 .plus {
+        width: 90%;
+        margin: 10% auto 2%;
+        text-align: right;
+    }
+
+    .page4 .plus>a {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .page4 .photo {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto 15%;
+        position: relative;
+    }
+
+    .page4 .slide {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slide-list {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide .slick-track {
+        width: 100%;
+    }
+
+    .page4 .slide .slick-track::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .page4 .slide .slick-slide {
+        /* 개별 배너 (li)*/
+        width: 50%;
+        margin: 0 1%;
+        float: left;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide a {
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide img {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .page4 .slide .slick-slide a:hover img {
+        transform: scale(1.1);
+    }
+
+    .page4 .slide .slick-list {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-arrow {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+    }
+
+    .page4 .slide .slick-prev {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        display: none;
+
+    }
+
+    .page4 .slide .slick-next {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        display: none;
+
+    }
+
+    .page4 .slide .slick-arrow img {
+        width: 0%;
+    }
+
+    .slide .slick-dots {
+        list-style-type: none;
+    }
+
+    .slide .slick-dots li {
+        display: none;
+    }
 }
 
 
@@ -550,33 +726,88 @@
 */
 @media (min-width:768px) and (max-width:1024px) {
 
+    /* main */
 
     /* page1-1 */
 
     .page1 {
         width: 100%;
         margin: 0 auto;
+        position: relative;
     }
 
+    .page1 .video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page1 .video::before {
+        content: '';
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .page1 .video video {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .page1 .video video source {
+        width: 100%;
+        height: 100%;
+    }
 
     .page1 .main-title {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
     }
 
     .page1 .main-title>b {
-        width: 100%;
         display: block;
         font-size: 60px;
         margin-bottom: 3%;
     }
 
     .page1 .main-title>span {
-        width: 100%;
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 110%;
+    }
+
+    .page1 .click {
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 2%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .page1 .click a {
+        font-size: 15px;
+        display: block;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .page1 .click img {
+        margin: 0 auto;
+        width: 35%;
+        display: block;
     }
 
 
@@ -585,11 +816,22 @@
 
     .page2 {
         width: 100%;
+        height: 100%;
+        margin-top: 15%;
         margin-bottom: 15%;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual {
         width: 100%;
+        height: fit-content;
         position: relative;
     }
 
@@ -598,7 +840,7 @@
     }
 
     .page2 .visual .title01 {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         position: absolute;
@@ -609,18 +851,26 @@
 
 
     .page2 .visual .title01>b {
+        margin: 0;
         display: block;
         color: #fff;
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .page2 .visual .title01>span {
+        margin: 0;
         color: #fff;
         display: block;
-        font-size: 18px;
+        font-size: 25px;
         line-height: 110%;
-        padding-top: 2%;
     }
+
+    .page2 .visual .title01>span {
+        padding-top: 2%;
+        transform: translateX(0%);
+    }
+
+
 
 
     /* page1-3 */
@@ -638,7 +888,7 @@
     .page3 .oneline .title02>b {
         display: block;
         text-align: center;
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .page3 .oneline .title02>span {
@@ -646,18 +896,18 @@
         text-align: center;
         padding-top: 2%;
         margin-bottom: 10%;
-        font-size: 18px;
+        font-size: 25px;
         color: #000;
     }
 
     .page3 .oneline .mall-logo01 {
-        animation: ani 20s infinite linear;
+        animation: ani 25s infinite linear;
         display: flex;
         justify-content: space-between;
     }
 
     .page3 .oneline .mall-logo02 {
-        animation: ani 20s infinite linear;
+        animation: ani 25s infinite linear;
         display: flex;
         justify-content: space-between;
     }
@@ -668,34 +918,157 @@
         }
 
         100% {
-            transform: translateX(-150%);
+            transform: translateX(-400%);
         }
     }
 
+    .page3 .oneline .mall-logo01,
+    .page3 .oneline .mall-logo02>a {}
+
 
     .page3 .oneline .mall-logo01>a {
-        margin: 0 10% 8% 0;
+        margin: 0 0 10% 0;
         flex-shrink: 0;
     }
 
     .page3 .oneline .mall-logo02>a {
-        margin: 0 10% 8% 0;
+        margin: 0 0 10% 0;
         flex-shrink: 0;
     }
 
     .page3 .oneline .mall-logo01>a>img {
-        width: 100%;
+        width: 70%;
     }
 
     .page3 .oneline .mall-logo02>a>img {
-        width: 100%;
+        width: 70%;
     }
 
 
-
     /* page4 */
+    .page4 {
+        width: 95%;
+        margin: 0 auto 15%;
+    }
 
+    .page4 .story {
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .page4 .story>b {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .page4 .story>span {
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: normal;
+        font-size: 25px;
+    }
+
+    .page4 .plus {
+        width: 95%;
+        margin: 10% auto 2%;
+        text-align: right;
+    }
+
+    .page4 .plus>a {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .page4 .photo {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .page4 .slide {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slide-list {
+        width: 85%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide .slick-track {
+        width: 100%;
+    }
+
+    .page4 .slide .slick-track::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .page4 .slide .slick-slide {
+        /* 개별 배너 (li)*/
+        width: 100%;
+        margin: 0 10px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide a {
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide img {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .page4 .slide .slick-slide a:hover img {
+        transform: scale(1.1);
+    }
+
+    .page4 .slide .slick-arrow {
+        width: 60px;
+        height: 60px;
+        font-size: 0;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    .page4 .slide .slick-prev {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .page4 .slide .slick-next {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .page4 .slide .slick-arrow img {
+        width: 100%;
+    }
+
+    .slide .slick-dots {
+        list-style-type: none;
+    }
+
+    .slide .slick-dots li {
+        display: none;
+    }
 
 }
 
@@ -709,32 +1082,88 @@
 */
 @media (min-width:1025px) and (max-width:1600px) {
 
+    /* main */
+
     /* page1-1 */
 
     .page1 {
         width: 100%;
         margin: 0 auto;
+        position: relative;
     }
 
+    .page1 .video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page1 .video::before {
+        content: '';
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .page1 .video video {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .page1 .video video source {
+        width: 100%;
+        height: 100%;
+    }
 
     .page1 .main-title {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
     }
 
     .page1 .main-title>b {
-        width: 100%;
         display: block;
-        font-size: 100px;
-        margin-bottom: 20px;
+        font-size: 90px;
+        margin-bottom: 3%;
     }
 
     .page1 .main-title>span {
-        width: 100%;
         display: block;
-        font-size: 30px;
-        line-height: 120%;
+        font-size: 25px;
+        line-height: 110%;
+    }
+
+    .page1 .click {
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .page1 .click a {
+        font-size: 18px;
+        display: block;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .page1 .click img {
+        margin: 0 auto;
+        width: 40%;
+        display: block;
     }
 
 
@@ -743,11 +1172,22 @@
 
     .page2 {
         width: 100%;
-        margin-bottom: 200px;
+        height: 100%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual {
         width: 100%;
+        height: fit-content;
         position: relative;
     }
 
@@ -756,7 +1196,7 @@
     }
 
     .page2 .visual .title01 {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         position: absolute;
@@ -767,21 +1207,25 @@
 
 
     .page2 .visual .title01>b {
+        margin: 0;
         display: block;
         color: #fff;
         font-size: 70px;
     }
 
     .page2 .visual .title01>span {
+        margin: 0;
         color: #fff;
         display: block;
         font-size: 25px;
-        line-height: 120%;
+        line-height: 110%;
     }
 
     .page2 .visual .title01>span {
-        padding-top: 20px;
+        padding-top: 2%;
+        transform: translateX(0%);
     }
+
 
 
 
@@ -806,20 +1250,20 @@
     .page3 .oneline .title02>span {
         display: block;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 2%;
         margin-bottom: 10%;
         font-size: 25px;
         color: #000;
     }
 
     .page3 .oneline .mall-logo01 {
-        animation: ani 20s infinite linear;
+        animation: ani 25s infinite linear;
         display: flex;
         justify-content: space-between;
     }
 
     .page3 .oneline .mall-logo02 {
-        animation: ani 20s infinite linear;
+        animation: ani 25s infinite linear;
         display: flex;
         justify-content: space-between;
     }
@@ -830,32 +1274,157 @@
         }
 
         100% {
-            transform: translateX(-150%);
+            transform: translateX(-400%);
         }
     }
 
+    .page3 .oneline .mall-logo01,
+    .page3 .oneline .mall-logo02>a {}
+
 
     .page3 .oneline .mall-logo01>a {
-        margin: 0 10% 8% 0;
+        margin: 0 0 10% 0;
         flex-shrink: 0;
     }
 
     .page3 .oneline .mall-logo02>a {
-        margin: 0 10% 8% 0;
+        margin: 0 0 10% 0;
         flex-shrink: 0;
     }
 
     .page3 .oneline .mall-logo01>a>img {
-        width: 100%;
+        width: 90%;
     }
 
     .page3 .oneline .mall-logo02>a>img {
-        width: 100%;
+        width: 90%;
     }
-
 
 
     /* page4 */
 
+    .page4 {
+        width: 95%;
+        margin: 0 auto 15%;
+    }
+
+    .page4 .story {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .page4 .story>b {
+        display: block;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .page4 .story>span {
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: normal;
+        font-size: 25px;
+    }
+
+    .page4 .plus {
+        width: 90%;
+        margin: 10% auto 2%;
+        text-align: right;
+    }
+
+    .page4 .plus>a {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .page4 .photo {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .page4 .slide {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slide-list {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide .slick-track {
+        width: 100%;
+    }
+
+    .page4 .slide .slick-track::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .page4 .slide .slick-slide {
+        /* 개별 배너 (li)*/
+        width: 100%;
+        margin: 0 10px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide a {
+        overflow: hidden;
+    }
+
+    .page4 .slide .slick-slide img {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .page4 .slide .slick-slide a:hover img {
+        transform: scale(1.1);
+    }
+
+    .page4 .slide .slick-arrow {
+        width: 100px;
+        height: 100px;
+        font-size: 0;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    .page4 .slide .slick-prev {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .page4 .slide .slick-next {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .page4 .slide .slick-arrow img {
+        width: 100%;
+    }
+
+    .slide .slick-dots {
+        list-style-type: none;
+    }
+
+    .slide .slick-dots li {
+        display: none;
+    }
 
 }

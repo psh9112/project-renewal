@@ -57,13 +57,9 @@ $(window).on('scroll', headerFun);
 
 // top btn
 
-let posY;
-let winH = $(window).height(); //window의 높이값
-let clickTop;
+$('picture').on('click', function(){
 
-
-$('picture').on('click', function () {
-
-    clickTop = $(window).offsetTop();
+    $('html').offset().top;
 
 });
+

@@ -21,6 +21,28 @@ function eventContent() {
 
 };
 
+function pageMove() {
+
+    eventContent();
+
+    event.preventDefault();
+
+    offsetTop;
+    $('html').animate({ scrollTop: offsetTop }, 300);
+
+    update();
+};
+
+function update() {
+    $('.page2').removeClass('active');
+    $(`.page2`).addClass('active');
+};
+
+$('.page1 .click a').on('click', pageMove);
+
+console.log($('.page2').offset().top)
+// $('.page1').on('scroll', scrollEvent);
+
 
 // function scrollEvent() {
 
@@ -42,22 +64,3 @@ function eventContent() {
 // };
 
 
-function pageMove() {
-
-    eventContent();
-
-    event.preventDefault();
-
-    offsetTop;
-    $('html').animate({ scrollTop: offsetTop }, 500);
-
-    update();
-};
-
-function update() {
-    $('.page2').removeClass('active');
-    $(`.page2`).addClass('active');
-};
-
-$('.page1 .click a').on('click', pageMove);
-// $('.page1').on('scroll', scrollEvent);
