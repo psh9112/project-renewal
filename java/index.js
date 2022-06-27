@@ -1,66 +1,49 @@
 
 // page1
 
+function init() {
+
+        let offsetTop = $('.page2').offset().top;
+
+        function eventContent() {
+            let scrHeight = { a: 0, a2: 0, state: 'down' };
+
+            scrHeight.a = $(window).scrollTop();
+
+            if (scrHeight.a > scrHeight.a2) {
+                scrHeight.state = true;
+            } else {
+                scrHeight.state = false;
+            }
+
+            scrHeight.a2 == scrHeight.a;
+        };
 
 
-let idx = 0, play;
-let scrHeight = { a: 0, a2: 0, state: 'down' };
-let offsetTop = $('.page2').offset().top;
+        function pageMove() {
 
-function eventContent() {
+            eventContent();
 
-    scrHeight.a = $(window).scrollTop();
+            event.preventDefault();
 
-    if (scrHeight.a > scrHeight.a2) {
-        scrHeight.state = true;
-    } else {
-        scrHeight.state = false;
-    }
+            offsetTop;
+            $('html').animate({ scrollTop: offsetTop }, 500);
 
-    scrHeight.a2 == scrHeight.a;
+            update();
+        };
 
+        function update() {
+            $(`.page2 .visual`).addClass('active');
+        };
+
+        $('.page1 .click a').on('click', pageMove);
+
+
+        $(window).scroll(function () {
+            if (!$('.page2 .visual').hasClass('active')) pageMove();
+        })
 };
 
-function pageMove() {
-
-    eventContent();
-
-    event.preventDefault();
-
-    offsetTop;
-    $('html').animate({ scrollTop: offsetTop }, 300);
-
-    update();
-};
-
-function update() {
-    $('.page2').removeClass('active');
-    $(`.page2`).addClass('active');
-};
-
-$('.page1 .click a').on('click', pageMove);
-
-console.log($('.page2').offset().top)
-// $('.page1').on('scroll', scrollEvent);
-
-
-// function scrollEvent() {
-
-//     eventContent();
-
-//     clearTimeout(play);
-
-//     play = setTimeout(function () {
-
-//         scrHeight.state ? idx++ : idx-- ;
-
-//         $('.page1').css({
-//             transform: `translateY(+${offsetTop}px)`
-//         })
-
-//     }, 50);
-
-//     update();
-// };
+$(window).on('load', init);
 
 

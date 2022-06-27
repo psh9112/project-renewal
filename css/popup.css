@@ -59,43 +59,53 @@ li {
 
 /* popup page */
 
-.info {
-    width: 1600px;
-    margin: 20px auto;
-    position: relative;
+.popup {
+    width: 1500px;
+    padding: 30px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%; top: 5%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border: 2px solid #555;
 }
 
+.popup .closer{
+    position: fixed;
+    right: 1%; top: 1%;
+    font-size: 50px;
+}
 
-.info .info2 {
+.popup .info2 {
     width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding-bottom: 50px;
 }
 
-.info .info2>div {
+.popup .info2>div {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.info .info2>div>h3 {
+.popup .info2>div>h3 {
     font-size: 40px;
     padding-right: 50px;
     padding-bottom: 20px;
 }
 
-.info .info2>div>a {
+.popup .info2>div>a {
     font-size: 20px;
     font-weight: normal;
 }
 
 
-.info .info2>p {
+.popup .info2>p {
     font-size: 25px;
 }
 
-.info .info3 {
+.popup .info3 {
     width: 1400px;
     margin: 0 auto;
     text-align: center;
@@ -103,155 +113,128 @@ li {
     border: 1px solid #555;
 }
 
-.info .info3>caption {
+.popup .info3>caption {
     text-align: left;
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
-.info .info3>thead {
+.popup .info3>thead {
     width: 90%;
 }
 
-.info .info3>thead>tr {
+.popup .info3>thead>tr {
     padding: 30px;
 }
 
-.info .info3>thead>tr:nth-child(1) {}
-
-.info .info3>thead>tr:nth-child(2) {}
-
-.info .info3>thead>tr>th {
+.popup .info3>thead>tr>th {
     font-size: 25px;
 }
 
-.info .info3>thead>tr:nth-child(1)>th {
+.popup .info3>thead>tr:nth-child(1)>th {
     padding: 12px 0;
     border-bottom: 1px double #555;
     font-size: 25px;
 }
 
-.info .info3>thead>tr:nth-child(2)>th {
+.popup .info3>thead>tr:nth-child(2)>th {
     font-weight: normal;
     padding: 20px;
     vertical-align: middle;
 }
 
-.info .info3>thead>tr:nth-child(2)>th>img {
+.popup .info3>thead>tr:nth-child(2)>th>img {
     padding-right: 10px;
 }
 
-.info .info3>thead>tr>th {}
+.popup .info3>thead>tr>th {}
 
-.info .info3>tbody {
+.popup .info3>tbody {
     width: 90%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
-.info .info3>tbody>tr {}
-
-.info .info3>tbody>tr>td {
+.popup .info3>tbody>tr>td {
     padding-bottom: 30px;
 }
 
 
-
-
 /* info4 */
-.info .info4 {
+.popup .info4 {
     width: 1400px;
-    margin: 100px auto 50px;
+    overflow: hidden;
+    margin: 30px auto 0;
+
 }
 
-.info .info4 .tourist {
-    margin: 100px auto 50px;
-    position: relative;
+.popup .info4 > aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     vertical-align: middle;
+    margin: 10px auto;
+    padding: 20px;
 }
 
-.info .info4 .tourist>h3 {
+
+.popup .info4 > aside > p{
     font-size: 30px;
     font-weight: bold;
 }
 
-.info .info4 .tourist .btn {}
+.popup .info4 > aside .btn{}
 
-.info .info4 .tourist .btn>p {}
-
-.info .info4 .tourist .btn>span {
-    width: 50%;
-    border-top: 1px solid #000;
-    display: inline-block;
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -10;
+.popup .info4 > aside .btn button{
+    width: 50px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.popup .info4 > aside > div .btn button img{
+    width: 100%
 }
 
-.info .info4 .tourist .btn>p>input {
-    display: none;
-}
-
-.info .info4 .tourist .btn>p>label {
-    position: absolute;
-    right: 30%;
-    top: 50%;
-    transform: translateY(-50%);
 
 
-}
-
-.info .info4 .tourist .btn>p>label>span {}
-
-.info .info4 .tourist .btn>p>label>span>img {}
-
-
-
-
-/* travel */
-
-.info .info4>ul {
-    width: 1400px;
-    margin: 30px auto 100px;
+.popup .info4>ul{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
 }
 
-.info .info4>ul>li {
-    margin: 0 auto;
-    padding: 15px;
+.popup .info4>ul>li {
+    width: 100%;
+    margin: 0 10px;
 }
 
-.info .info4>ul>li>div {
-    width: 320px;
+.popup .info4>ul>li>div {
+    width: 300px;
     border: 1px solid #aaa;
 }
 
-.info .info4>ul>li>div>a {}
+.popup .info4>ul>li>div>a {}
 
-.info .info4>ul>li>div>a>img {
+.popup .info4>ul>li>div>a>img {
     width: 100%;
 }
 
-.info .info4>ul>li>div>a .txt {
+.popup .info4>ul>li>div>a .txt {
     font-size: 20px;
     display: inline-block;
     padding: 10px 15px;
 }
 
-.info .info4>ul>li>div>a .txt>b {
+.popup .info4>ul>li>div>a .txt>b {
     font-size: 25px;
     display: block;
     padding: 5px 0 10px;
 }
+
+
+
+
 
 
 /*
@@ -365,7 +348,7 @@ li {
         margin: 10% auto 5%;
     }
 
-    .info .info4 .tourist {
+    .info .info4 li:nth-of-type(1)  {
         width: 100%;
         margin: 5% auto;
         position: relative;
@@ -376,18 +359,18 @@ li {
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .info .info4 li:nth-of-type(1) >h3 {
         font-size: 25px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {
+    .info .info4 li:nth-of-type(1)  .btn {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p {}
+    .info .info4 li:nth-of-type(1)  .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .info .info4 li:nth-of-type(1)  .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -398,11 +381,11 @@ li {
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .info .info4 li:nth-of-type(1)  .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .info .info4 li:nth-of-type(1)  .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -411,9 +394,9 @@ li {
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span>img {
         width: 80%;
     }
 
@@ -461,8 +444,6 @@ li {
 
 
 }
-
-
 
 
 /* 
@@ -594,7 +575,7 @@ li {
         margin: 0 auto;
     }
 
-    .info .info4 .tourist {
+    .info .info4 li:nth-of-type(1)  {
         width: 100%;
         margin: 10% auto 5%;
         position: relative;
@@ -605,16 +586,16 @@ li {
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .info .info4 li:nth-of-type(1) >h3 {
         font-size: 25px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {}
+    .info .info4 li:nth-of-type(1)  .btn {}
 
-    .info .info4 .tourist .btn>p {}
+    .info .info4 li:nth-of-type(1)  .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .info .info4 li:nth-of-type(1)  .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -625,11 +606,11 @@ li {
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .info .info4 li:nth-of-type(1)  .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .info .info4 li:nth-of-type(1)  .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -638,9 +619,9 @@ li {
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span>img {
         width: 80%;
     }
 
@@ -689,9 +670,6 @@ li {
 
 
 }
-
-
-
 
 
 /*
@@ -821,7 +799,7 @@ li {
         margin: 100px auto 50px;
     }
 
-    .info .info4 .tourist {
+    .info .info4 li:nth-of-type(1)  {
         width: 100%;
         margin: 50px auto 25px;
         position: relative;
@@ -832,16 +810,16 @@ li {
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .info .info4 li:nth-of-type(1) >h3 {
         font-size: 30px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {}
+    .info .info4 li:nth-of-type(1)  .btn {}
 
-    .info .info4 .tourist .btn>p {}
+    .info .info4 li:nth-of-type(1)  .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .info .info4 li:nth-of-type(1)  .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -852,11 +830,11 @@ li {
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .info .info4 li:nth-of-type(1)  .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .info .info4 li:nth-of-type(1)  .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -865,9 +843,9 @@ li {
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {}
+    .info .info4 li:nth-of-type(1)  .btn>p>label>span>img {}
 
 
 

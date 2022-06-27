@@ -28,7 +28,7 @@
     padding: 20px;
 }
 
-.search .click .city>a {
+.search .click .city>button {
     width: 80px;
     height: 40px;
     margin: 5px auto;
@@ -39,17 +39,20 @@
     border: 1px solid #646464;
     border-radius: 5px;
     font-weight: normal;
+    background-color: #fff;
+    outline: none;
+    flex-shrink: 0;
 }
 
-.search .click .city>a:nth-child(1) {
+.search .click .city>button:nth-child(1) {
     background-color: #ddd;
 }
 
-.search .click .city>a:nth-child(2) {
+.search .click .city>button:nth-child(2) {
     background-color: #FFEAAA;
 }
 
-.search .click .city>a:hover {
+.search .click .city>button:hover {
     background-color: #999;
     color: #fff;
 }
@@ -59,32 +62,35 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 .search .click .window>span {
     width: 450px;
     height: 55px;
     border: 3px solid #FFCC33;
+    flex-shrink: 0;
 }
 
 .search .click .window>span>input {
     width: 100%; height: 46px;
     border: none;
-    align-items: center;
     text-align: center;
     font-size: 18px;
     outline: none;
     font-weight: normal;
 }
 
-.search .click .window>a {
+.search .click .window>button {
     width: 50px; height: 55px;
     display: inline-block;
     background-color: #FFCC33;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
 }
 
-.search .click .window>a>img {
+.search .click .window>button>img {
     width: 70%;
     margin: 10px 5px;
 }
@@ -117,65 +123,61 @@
 }
 
 
-
-.market .list>li .popup img {
+.market .list>li .market-list > img {
     width: 100%;
 }
 
 
-.market .list>li .popup .txt {
+.market .list > li .market-list .txt {
     width: 100%;
     display: block;
-    font-weight: normal;
     font-size: 18px;
     padding: 15px;
     padding-bottom: 60px;
     color: #777;
+    font-weight: normal;
 }
 
-.market .list>li .popup .txt >b {
+.market .list>li .market-list .txt >b {
     display: block;
     padding-bottom: 10px;
 }
 
-.market .list > li .popup .place {
+.market .list > li .market-list .place {
     width: 100%;
-    font-weight: normal;
     padding: 10px;
     color: #555;
+    font-weight: normal;
     background-color: #ddd;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
 }
 
-.market .list > li .popup .place > span {
+.market .list > li .market-list .place > span {
     display: block;
     color: #555;
     font-weight: normal;
     font-size: 15px;
 }
-.market .list > li .popup .place > span:nth-child(1) {
+.market .list > li .market-list .place > span:nth-child(1) {
     font-size: 16px;
 }
-.market .list > li .popup .place > span:nth-child(2) {
+.market .list > li .market-list .place > span:nth-child(2) {
     width: 30%;
     text-align: end;
 }
 
 
-.market .list>li .popup .place >span > img {
+.market .list>li .market-list .place >span > img {
     width: 15%;
     margin-right: 5px;
 }
 
-.market .list > li.active .info{
-    display: block;
-}
 
 /* popup page */
 
-.market .list > li .info {
+.market .list > li .popup {
     width: 1500px;
     padding: 30px;
     background-color: #fff;
@@ -187,37 +189,46 @@
     border: 2px solid #555;
 }
 
+.market .list > li .popup.active{
+    display: block;
+}
 
-.market .list > li .info .info2 {
+.market .list > li .popup .closer{
+    position: fixed;
+    right: 1%; top: 1%;
+    font-size: 50px;
+}
+
+.market .list > li .popup .info2 {
     width: 1400px;
     margin: 0 auto 20px;
     padding-bottom: 50px;
 }
 
-.market .list > li .info .info2>div {
+.market .list > li .popup .info2>div {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.market .list > li .info .info2>div>h3 {
+.market .list > li .popup .info2>div>h3 {
     font-size: 40px;
     padding-right: 50px;
     padding-bottom: 20px;
 }
 
-.market .list > li .info .info2>div>a {
+.market .list > li .popup .info2>div>a {
     font-size: 20px;
     font-weight: normal;
 }
 
 
-.market .list > li .info .info2>p {
+.market .list > li .popup .info2>p {
     font-size: 25px;
 }
 
-.market .list > li .info .info3 {
+.market .list > li .popup .info3 {
     width: 1400px;
     margin: 0 auto;
     text-align: center;
@@ -225,142 +236,120 @@
     border: 1px solid #555;
 }
 
-.market .list > li .info .info3>caption {
+.market .list > li .popup .info3>caption {
     text-align: left;
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
-.market .list > li .info .info3>thead {
+.market .list > li .popup .info3>thead {
     width: 90%;
 }
 
-.market .list > li .info .info3>thead>tr {
+.market .list > li .popup .info3>thead>tr {
     padding: 30px;
 }
 
-.market .list > li .info .info3>thead>tr>th {
+.market .list > li .popup .info3>thead>tr>th {
     font-size: 25px;
 }
 
-.market .list > li .info .info3>thead>tr:nth-child(1)>th {
+.market .list > li .popup .info3>thead>tr:nth-child(1)>th {
     padding: 12px 0;
     border-bottom: 1px double #555;
     font-size: 25px;
 }
 
-.market .list > li .info .info3>thead>tr:nth-child(2)>th {
+.market .list > li .popup .info3>thead>tr:nth-child(2)>th {
     font-weight: normal;
     padding: 20px;
     vertical-align: middle;
 }
 
-.market .list > li .info .info3>thead>tr:nth-child(2)>th>img {
+.market .list > li .popup .info3>thead>tr:nth-child(2)>th>img {
     padding-right: 10px;
 }
 
-.market .list > li .info .info3>thead>tr>th {}
+.market .list > li .popup .info3>thead>tr>th {}
 
-.market .list > li .info .info3>tbody {
+.market .list > li .popup .info3>tbody {
     width: 90%;
     margin: 0 auto;
 }
 
-.market .list > li .info .info3>tbody>tr>td {
+.market .list > li .popup .info3>tbody>tr>td {
     padding-bottom: 30px;
 }
 
 
 /* info4 */
-.info .info4 {
+.popup .info4 {
     width: 1400px;
+    overflow: hidden;
     margin: 30px auto 0;
+
 }
 
-.info .info4 .tourist {
-    margin: 0 auto;
-    position: relative;
+.popup .info4 > aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     vertical-align: middle;
+    margin: 10px auto;
+    padding: 20px;
 }
 
-.info .info4 .tourist>h3 {
+
+.popup .info4 > aside > p{
     font-size: 30px;
     font-weight: bold;
 }
 
-.info .info4 .tourist .btn {}
+.popup .info4 > aside .btn{}
 
-.info .info4 .tourist .btn>p {}
-
-.info .info4 .tourist .btn>span {
-    width: 50%;
-    border-top: 1px solid #000;
-    display: inline-block;
-    position: absolute;
-    right: 10%; top: 50%;
-    transform: translateY(-50%);
-    z-index: -10;
+.popup .info4 > aside .btn button{
+    width: 50px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.popup .info4 > aside > div .btn button img{
+    width: 100%
 }
 
-.info .info4 .tourist .btn>p>input {
-    display: none;
-}
-
-.info .info4 .tourist .btn>p>label {
-    position: absolute;
-    right: 30%;
-    top: 50%;
-    transform: translateY(-50%);
 
 
-}
-
-.info .info4 .tourist .btn>p>label>span {}
-
-.info .info4 .tourist .btn>p>label>span>img {}
-
-
-
-
-/* travel */
-
-.info .info4>ul {
-    width: 1400px;
-    margin: 30px auto;
+.popup .info4>ul{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
 }
 
-.info .info4>ul>li {
-    margin: 0 auto;
-    padding: 15px;
+.popup .info4>ul>li {
+    width: 100%;
+    margin: 0 10px;
 }
 
-.info .info4>ul>li>div {
-    width: 320px;
+.popup .info4>ul>li>div {
+    width: 300px;
     border: 1px solid #aaa;
 }
 
-.info .info4>ul>li>div>a {}
+.popup .info4>ul>li>div>a {}
 
-.info .info4>ul>li>div>a>img {
+.popup .info4>ul>li>div>a>img {
     width: 100%;
 }
 
-.info .info4>ul>li>div>a .txt {
+.popup .info4>ul>li>div>a .txt {
     font-size: 20px;
     display: inline-block;
     padding: 10px 15px;
 }
 
-.info .info4>ul>li>div>a .txt>b {
+.popup .info4>ul>li>div>a .txt>b {
     font-size: 25px;
     display: block;
     padding: 5px 0 10px;
@@ -415,7 +404,7 @@
         flex-shrink: 0;
     }
 
-    .search .click .city>a {
+    .search .click .city>button {
         width: 23%; height: 5%;
         margin: 3% auto;
         padding: 3%;
@@ -425,17 +414,19 @@
         border: 1px solid #646464;
         border-radius: 5px;
         font-weight: normal;
+        background-color: #fff;
+        outline: none;
     }
 
-    .search .click .city>a:nth-child(1) {
+    .search .click .city>button:nth-child(1) {
         background-color: #ddd;
     }
 
-    .search .click .city>a:nth-child(2) {
+    .search .click .city>button:nth-child(2) {
         background-color: #FFEAAA;
     }
 
-    .search .click .city>a:hover {
+    .search .click .city>button:hover {
         background-color: #999;
         color: #fff;
     }
@@ -471,15 +462,17 @@
         flex-shrink: 0;
     }
 
-    .search .click .window>a {
+    .search .click .window>button {
         flex-shrink: 0;
         width: 40px;
         height: 50px;
         display: inline-block;
         background-color: #FFCC33;
+        outline: none;
+        border: none;
     }
 
-    .search .click .window>a>img {
+    .search .click .window>button>img {
         width: 95%;
         margin: 0 auto;
         padding: 12px 6px;
@@ -566,38 +559,38 @@
 
 
 
-    .info {
+    .popup {
         width: 100%;
         position: relative;
     }
 
 
 
-    .info .info2 {
+    .popup .info2 {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 50px;
     }
 
-    .info .info2>div {
+    .popup .info2>div {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .info .info2>div>h3 {
+    .popup .info2>div>h3 {
         font-size: 30px;
         padding-right: 40px;
         padding-bottom: 20px;
     }
 
-    .info .info2>div>a {
+    .popup .info2>div>a {
         font-size: 20px;
         font-weight: normal;
     }
 
-    .info .info2>p {
+    .popup .info2>p {
         font-size: 18px;
         line-height: 120%;
     }
@@ -605,7 +598,7 @@
 
 
     /* info 3 */
-    .info .info3 {
+    .popup .info3 {
         width: 90%;
         margin: 0 auto;
         text-align: center;
@@ -613,62 +606,62 @@
         border: 1px solid #555;
     }
 
-    .info .info3>caption {
+    .popup .info3>caption {
         text-align: left;
         font-size: 20px;
         font-weight: bold;
         padding-bottom: 10px;
     }
 
-    .info .info3>thead {
+    .popup .info3>thead {
         width: 100%;
     }
 
-    .info .info3>thead>tr {
+    .popup .info3>thead>tr {
         padding: 10px;
     }
 
-    .info .info3>thead>tr:nth-child(1) {}
+    .popup .info3>thead>tr:nth-child(1) {}
 
-    .info .info3>thead>tr:nth-child(2) {}
+    .popup .info3>thead>tr:nth-child(2) {}
 
-    .info .info3>thead>tr>th {}
+    .popup .info3>thead>tr>th {}
 
-    .info .info3>thead>tr:nth-child(1)>th {
+    .popup .info3>thead>tr:nth-child(1)>th {
         padding: 5px 0;
         border-bottom: 1px double #555;
         font-size: 18px;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th {
+    .popup .info3>thead>tr:nth-child(2)>th {
         font-size: 0;
         font-weight: normal;
         padding: 20px;
         vertical-align: middle;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th>img {
+    .popup .info3>thead>tr:nth-child(2)>th>img {
         padding-right: 0px;
     }
 
-    .info .info3>tbody {
+    .popup .info3>tbody {
         width: 100%;
         margin: 10px auto;
     }
 
-    .info .info3>tbody>tr {}
+    .popup .info3>tbody>tr {}
 
-    .info .info3>tbody>tr>td {
+    .popup .info3>tbody>tr>td {
         padding-bottom: 15px;
     }
 
     /* info4 */
-    .info .info4 {
+    .popup .info4 {
         width: 90%;
         margin: 10% auto 5%;
     }
 
-    .info .info4 .tourist {
+    .popup .info4 .tourist {
         width: 100%;
         margin: 5% auto;
         position: relative;
@@ -679,18 +672,18 @@
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .popup .info4 .tourist>h3 {
         font-size: 25px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {
+    .popup .info4 .tourist .btn {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p {}
+    .popup .info4 .tourist .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .popup .info4 .tourist .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -701,11 +694,11 @@
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .popup .info4 .tourist .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .popup .info4 .tourist .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -714,16 +707,16 @@
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .popup .info4 .tourist .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {
+    .popup .info4 .tourist .btn>p>label>span>img {
         width: 80%;
     }
 
 
     /* travel */
 
-    .info .info4>ul {
+    .popup .info4>ul {
         width: 100%;
         margin: 3% auto 10%;
         display: flex;
@@ -732,29 +725,29 @@
         overflow: hidden;
     }
 
-    .info .info4>ul>li {
+    .popup .info4>ul>li {
         margin: 0 auto;
         padding: 8px;
     }
 
-    .info .info4>ul>li>div {
+    .popup .info4>ul>li>div {
         width: 250px;
         border: 1px solid #aaa;
     }
 
-    .info .info4>ul>li>div>a {}
+    .popup .info4>ul>li>div>a {}
 
-    .info .info4>ul>li>div>a>img {
+    .popup .info4>ul>li>div>a>img {
         width: 100%;
     }
 
-    .info .info4>ul>li>div>a .txt {
+    .popup .info4>ul>li>div>a .txt {
         font-size: 15px;
         display: inline-block;
         padding: 10px;
     }
 
-    .info .info4>ul>li>div>a .txt>b {
+    .popup .info4>ul>li>div>a .txt>b {
         font-size: 18px;
         display: block;
         padding: 5px;
@@ -808,7 +801,7 @@
     flex-shrink: 0;
 }
 
-.search .click .city>a {
+.search .click .city>button {
     width: 80px;
     height: 40px;
     margin: 5px auto;
@@ -819,17 +812,19 @@
     border: 1px solid #646464;
     border-radius: 5px;
     font-weight: normal;
+    background-color: #fff;
+    outline: none;
 }
 
-.search .click .city>a:nth-child(1) {
+.search .click .city>button:nth-child(1) {
     background-color: #ddd;
 }
 
-.search .click .city>a:nth-child(2) {
+.search .click .city>button:nth-child(2) {
     background-color: #FFEAAA;
 }
 
-.search .click .city>a:hover {
+.search .click .city>button:hover {
     background-color: #999;
     color: #fff;
 }
@@ -863,15 +858,17 @@
     font-weight: normal;
 }
 
-.search .click .window>a {
+.search .click .window>button {
     display: inline-block;
     width: 50px;
     height: 55px;
     background-color: #FFCC33;
     flex-shrink: 0;
+    outline: none;
+    border: none;
 }
 
-.search .click .window>a>img {
+.search .click .window>button>img {
     width: 70%;
     margin: 10px 5px;
 }
@@ -960,13 +957,13 @@
 @media (min-width:768px) and (max-width:1024px) {
 
 
-    .info {
+    .popup {
         width: 100%;
         position: relative;
     }
 
 
-    .info .head {
+    .popup .head {
         width: 90%;
         margin: 20px auto;
     }
@@ -975,45 +972,45 @@
         text-align: center;
     }
 
-    .info .head>h1>a {}
+    .popup .head>h1>a {}
 
-    .info .head>h1>a>img {}
+    .popup .head>h1>a>img {}
 
 
 
-    .info .info2 {
+    .popup .info2 {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 50px;
     }
 
-    .info .info2>div {
+    .popup .info2>div {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .info .info2>div>h3 {
+    .popup .info2>div>h3 {
         font-size: 30px;
         padding-right: 40px;
         padding-bottom: 20px;
     }
 
-    .info .info2>div>a {
+    .popup .info2>div>a {
         font-size: 20px;
         font-weight: normal;
     }
 
 
-    .info .info2>p {
+    .popup .info2>p {
         font-size: 20px;
         line-height: 120%;
     }
 
 
 
-    .info .info3 {
+    .popup .info3 {
         width: 90%;
         margin: 0 auto;
         text-align: center;
@@ -1021,67 +1018,67 @@
         border: 1px solid #555;
     }
 
-    .info .info3>caption {
+    .popup .info3>caption {
         text-align: left;
         font-size: 25px;
         font-weight: bold;
         padding-bottom: 20px;
     }
 
-    .info .info3>thead {
+    .popup .info3>thead {
         width: 90%;
     }
 
-    .info .info3>thead>tr {
+    .popup .info3>thead>tr {
         padding: 30px;
     }
 
-    .info .info3>thead>tr:nth-child(1) {}
+    .popup .info3>thead>tr:nth-child(1) {}
 
-    .info .info3>thead>tr:nth-child(2) {}
+    .popup .info3>thead>tr:nth-child(2) {}
 
-    .info .info3>thead>tr>th {}
+    .popup .info3>thead>tr>th {}
 
-    .info .info3>thead>tr:nth-child(1)>th {
+    .popup .info3>thead>tr:nth-child(1)>th {
         padding: 12px 0;
         border-bottom: 1px double #555;
         font-size: 18px;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th {
+    .popup .info3>thead>tr:nth-child(2)>th {
         font-size: 0;
         font-weight: normal;
         padding: 20px;
         vertical-align: middle;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th>img {
+    .popup .info3>thead>tr:nth-child(2)>th>img {
         padding-right: 10px;
     }
 
 
 
 
-    .info .info3>tbody {
+    .popup .info3>tbody {
         width: 90%;
         margin: 30px auto;
     }
 
-    .info .info3>tbody>tr {}
+    .popup .info3>tbody>tr {}
 
-    .info .info3>tbody>tr>td {
+    .popup .info3>tbody>tr>td {
         padding-bottom: 30px;
     }
 
 
 
     /* info4 */
-    .info .info4 {
+    .popup .info4 {
         width: 90%;
         margin: 0 auto;
     }
 
-    .info .info4 .tourist {
+    .popup .info4 .tourist {
         width: 100%;
         margin: 10% auto 5%;
         position: relative;
@@ -1092,16 +1089,16 @@
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .popup .info4 .tourist>h3 {
         font-size: 25px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {}
+    .popup .info4 .tourist .btn {}
 
-    .info .info4 .tourist .btn>p {}
+    .popup .info4 .tourist .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .popup .info4 .tourist .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -1112,11 +1109,11 @@
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .popup .info4 .tourist .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .popup .info4 .tourist .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -1125,9 +1122,9 @@
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .popup .info4 .tourist .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {
+    .popup .info4 .tourist .btn>p>label>span>img {
         width: 80%;
     }
 
@@ -1136,7 +1133,7 @@
 
     /* travel */
 
-    .info .info4>ul {
+    .popup .info4>ul {
         width: 100%;
         margin: 5% auto;
         display: flex;
@@ -1145,29 +1142,29 @@
         overflow: hidden;
     }
 
-    .info .info4>ul>li {
+    .popup .info4>ul>li {
         margin: 0 auto;
         padding: 15px;
     }
 
-    .info .info4>ul>li>div {
+    .popup .info4>ul>li>div {
         width: 200px;
         border: 1px solid #aaa;
     }
 
-    .info .info4>ul>li>div>a {}
+    .popup .info4>ul>li>div>a {}
 
-    .info .info4>ul>li>div>a>img {
+    .popup .info4>ul>li>div>a>img {
         width: 100%;
     }
 
-    .info .info4>ul>li>div>a .txt {
+    .popup .info4>ul>li>div>a .txt {
         font-size: 15px;
         display: inline-block;
         padding: 10px;
     }
 
-    .info .info4>ul>li>div>a .txt>b {
+    .popup .info4>ul>li>div>a .txt>b {
         font-size: 18px;
         display: block;
         padding: 5px 0 10px;
@@ -1217,7 +1214,7 @@
     flex-shrink: 0;
 }
 
-.search .click .city>a {
+.search .click .city>button {
     width: 80px;
     height: 40px;
     margin: 5px auto;
@@ -1229,17 +1226,19 @@
     border-radius: 5px;
     font-weight: normal;
     flex-shrink: 0;
+    outline: none;
+    background-color: #fff;
 }
 
-.search .click .city>a:nth-child(1) {
+.search .click .city>button:nth-child(1) {
     background-color: #ddd;
 }
 
-.search .click .city>a:nth-child(2) {
+.search .click .city>button:nth-child(2) {
     background-color: #FFEAAA;
 }
 
-.search .click .city>a:hover {
+.search .click .city>button:hover {
     background-color: #999;
     color: #fff;
 }
@@ -1273,15 +1272,17 @@
     font-weight: normal;
 }
 
-.search .click .window>a {
+.search .click .window>button {
     display: inline-block;
     width: 50px;
     height: 55px;
     background-color: #FFCC33;
     flex-shrink: 0;
+    border: none;
+    outline: none;
 }
 
-.search .click .window>a>img {
+.search .click .window>button>img {
     width: 70%;
     margin: 10px 5px;
 }
@@ -1369,13 +1370,13 @@
 @media (min-width:1025px) and (max-width:1500px) {
 
 
-    .info {
+    .popup {
         width: 100%;
         position: relative;
     }
 
 
-    .info .head {
+    .popup .head {
         width: 90%;
         margin: 20px auto;
     }
@@ -1384,43 +1385,43 @@
         text-align: center;
     }
 
-    .info .head>h1>a {}
+    .popup .head>h1>a {}
 
-    .info .head>h1>a>img {}
+    .popup .head>h1>a>img {}
 
 
 
-    .info .info2 {
+    .popup .info2 {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 50px;
     }
 
-    .info .info2>div {
+    .popup .info2>div {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .info .info2>div>h3 {
+    .popup .info2>div>h3 {
         font-size: 40px;
         padding-right: 40px;
         padding-bottom: 20px;
     }
 
-    .info .info2>div>a {
+    .popup .info2>div>a {
         font-size: 20px;
         font-weight: normal;
     }
 
 
-    .info .info2>p {
+    .popup .info2>p {
         font-size: 23px;
         line-height: 120%;
     }
 
-    .info .info3 {
+    .popup .info3 {
         width: 90%;
         margin: 0 auto;
         text-align: center;
@@ -1428,67 +1429,67 @@
         border: 1px solid #555;
     }
 
-    .info .info3>caption {
+    .popup .info3>caption {
         text-align: left;
         font-size: 30px;
         font-weight: bold;
         padding-bottom: 20px;
     }
 
-    .info .info3>thead {
+    .popup .info3>thead {
         width: 90%;
     }
 
-    .info .info3>thead>tr {
+    .popup .info3>thead>tr {
         padding: 30px;
     }
 
-    .info .info3>thead>tr:nth-child(1) {}
+    .popup .info3>thead>tr:nth-child(1) {}
 
-    .info .info3>thead>tr:nth-child(2) {}
+    .popup .info3>thead>tr:nth-child(2) {}
 
-    .info .info3>thead>tr>th {}
+    .popup .info3>thead>tr>th {}
 
-    .info .info3>thead>tr:nth-child(1)>th {
+    .popup .info3>thead>tr:nth-child(1)>th {
         padding: 12px 0;
         border-bottom: 1px double #555;
         font-size: 25px;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th {
+    .popup .info3>thead>tr:nth-child(2)>th {
         font-size: 20px;
         font-weight: normal;
         padding: 20px;
         vertical-align: middle;
     }
 
-    .info .info3>thead>tr:nth-child(2)>th>img {
+    .popup .info3>thead>tr:nth-child(2)>th>img {
         padding-right: 10px;
     }
 
 
 
 
-    .info .info3>tbody {
+    .popup .info3>tbody {
         width: 90%;
         margin: 30px auto;
     }
 
-    .info .info3>tbody>tr {}
+    .popup .info3>tbody>tr {}
 
-    .info .info3>tbody>tr>td {
+    .popup .info3>tbody>tr>td {
         padding-bottom: 30px;
     }
 
 
 
     /* info4 */
-    .info .info4 {
+    .popup .info4 {
         width: 90%;
         margin: 100px auto 50px;
     }
 
-    .info .info4 .tourist {
+    .popup .info4 .tourist {
         width: 100%;
         margin: 50px auto 25px;
         position: relative;
@@ -1499,16 +1500,16 @@
         vertical-align: middle;
     }
 
-    .info .info4 .tourist>h3 {
+    .popup .info4 .tourist>h3 {
         font-size: 30px;
         font-weight: bold;
     }
 
-    .info .info4 .tourist .btn {}
+    .popup .info4 .tourist .btn {}
 
-    .info .info4 .tourist .btn>p {}
+    .popup .info4 .tourist .btn>p {}
 
-    .info .info4 .tourist .btn>span {
+    .popup .info4 .tourist .btn>span {
         width: 50%;
         border-top: 1px solid #000;
         display: inline-block;
@@ -1519,11 +1520,11 @@
         z-index: -10;
     }
 
-    .info .info4 .tourist .btn>p>input {
+    .popup .info4 .tourist .btn>p>input {
         display: none;
     }
 
-    .info .info4 .tourist .btn>p>label {
+    .popup .info4 .tourist .btn>p>label {
         position: absolute;
         right: 30%;
         top: 50%;
@@ -1532,16 +1533,16 @@
 
     }
 
-    .info .info4 .tourist .btn>p>label>span {}
+    .popup .info4 .tourist .btn>p>label>span {}
 
-    .info .info4 .tourist .btn>p>label>span>img {}
+    .popup .info4 .tourist .btn>p>label>span>img {}
 
 
 
 
     /* travel */
 
-    .info .info4>ul {
+    .popup .info4>ul {
         width: 100%;
         margin: 30px auto 100px;
         display: flex;
@@ -1550,29 +1551,29 @@
         overflow: hidden;
     }
 
-    .info .info4>ul>li {
+    .popup .info4>ul>li {
         margin: 0 auto;
         padding: 15px;
     }
 
-    .info .info4>ul>li>div {
+    .popup .info4>ul>li>div {
         width: 320px;
         border: 1px solid #aaa;
     }
 
-    .info .info4>ul>li>div>a {}
+    .popup .info4>ul>li>div>a {}
 
-    .info .info4>ul>li>div>a>img {
+    .popup .info4>ul>li>div>a>img {
         width: 100%;
     }
 
-    .info .info4>ul>li>div>a .txt {
+    .popup .info4>ul>li>div>a .txt {
         font-size: 20px;
         display: inline-block;
         padding: 10px 15px;
     }
 
-    .info .info4>ul>li>div>a .txt>b {
+    .popup .info4>ul>li>div>a .txt>b {
         font-size: 25px;
         display: block;
         padding: 5px 0 10px;

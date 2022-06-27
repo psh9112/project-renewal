@@ -26,11 +26,14 @@
         </a>
     </picture>
 
+    <figure><img src="./img/background/Seoul.jpg" alt=""></figure>
+
     <div class="menu-title">
         <h3 class="main">전통시장 찾기</h3>
         <p class="sub">우리 동네를 지켜주는 든든한 버팀목, 전통시장과 함께 해요!</p>
     </div>
 
+<!-- 
     <div class="navi_bar">
         <p>
             <img src="./img/Icon/home_navi.svg" alt="home">
@@ -40,44 +43,45 @@
             <span>전통시장 찾기</span>
         </p>
     </div>
+-->
 
     <div class="search">
         <p>SEARCH</p>
         <div class="click">
             <div class="city">
-                <a href="#">전체</a>
-                <a href="#">인기순</a>
-                <a href="#">중구</a>
-                <a href="#">용산구</a>
-                <a href="#">성동구</a>
-                <a href="#">광진구</a>
-                <a href="#">동대문구</a>
-                <a href="#">중랑구</a>
-                <a href="#">노원구</a>
-                <a href="#">은평구</a>
-                <a href="#">마포구</a>
-                <a href="#">양천구</a>
-                <a href="#">강서구</a>
-                <a href="#">성북구</a>
-                <a href="#">강북구</a>
-                <a href="#">도봉구</a>
-                <a href="#">동작구</a>
-                <a href="#">관악구</a>
-                <a href="#">종로구</a>
-                <a href="#">구로구</a>
-                <a href="#">금천구</a>
-                <a href="#">영등포구</a>
-                <a href="#">강남구</a>
-                <a href="#">송파구</a>
-                <a href="#">강동구</a>
-                <a href="#">서대문구</a>
-                <a href="#">서초구</a>
+                <button>전체</button>
+                <button>인기순</button>
+                <button>중구</button>
+                <button>용산구</button>
+                <button>성동구</button>
+                <button>광진구</button>
+                <button>동대문구</button>
+                <button>중랑구</button>
+                <button>노원구</button>
+                <button>은평구</button>
+                <button>마포구</button>
+                <button>양천구</button>
+                <button>강서구</button>
+                <button>성북구</button>
+                <button>강북구</button>
+                <button>도봉구</button>
+                <button>동작구</button>
+                <button>관악구</button>
+                <button>종로구</button>
+                <button>구로구</button>
+                <button>금천구</button>
+                <button>영등포구</button>
+                <button>강남구</button>
+                <button>송파구</button>
+                <button>강동구</button>
+                <button>서대문구</button>
+                <button>서초구</button>
             </div>
             <div class="window">
                 <span>
                     <input type="text" placeholder="검색어를 입력해주세요" required>
                 </span>
-                <a href="#"><img src="./img/Icon/icon_search.svg" alt="검색"></a>
+                <button><img src="./img/Icon/icon_search.svg" alt="검색"></button>
             </div>
         </div>
     </div>
@@ -85,11 +89,11 @@
     <div class="market">
         <ul class="list">
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_002.jpg" alt="남대문시장">
                     <p class="txt">
                         <b>남대문시장</b>
-                        숭례문(남대문) 인근에 위치한 종합재래시장으로 동대문 시장과 함께
+                        숭례문(남대문) 인근에 위치한 종합재래시장으로 동대문시장과 함께
                         서울의 2대 시장 중 하나이며,
                         한국의 맛을 느낄 수 있는 본통특화거리를
                         비롯해 군복골목, 문구골목, 갈치골목 등
@@ -101,8 +105,10 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">중구
                         </span>
                     </p>
-                </div>
-                <div class="info">
+                </div> -->
+
+                <div class="popup">
+                    <span class="closer" style="cursor: pointer;">×</span>
                     <div class="info2">
                         <div>
                             <h3>남대문시장</h3>
@@ -110,7 +116,7 @@
                         </div>
                         <p>
                             서울특별시 중구 남창동 49-1,<br>
-                            숭례문(남대문) 인근에 위치한 종합재래시장으로 서울 지하철 4호선 회현역과 가까이 위치해 있으며, 동대문 시장과 함께 서울의 2대 시장 중 하나이다.<br>
+                            남대문(숭례문) 인근에 위치한 종합재래시장으로 서울 지하철 4호선 회현역과 가까이 위치해 있으며, 동대문 시장과 함께 서울의 2대 시장 중 하나이다.<br>
                             크고 작은 1만점 이상의 상점이 자리하고 있으며, 토산물, 일용품, 식료품, 의료품 등을 취급하고 있다.<br>
                             또한 인근에는 명동, 한국은행, 국민은행 본점부터 신세계백화점, 롯데백화점 본점이 있어 외국인 관광객도 많이 찾고 있다.
                         </p>
@@ -149,18 +155,13 @@
                     </table>
 
                     <div class="info4">
-                        <div class="tourist">
-                            <h3>주변 관광지</h3>
-                            <div class="btn">
-                                <p>
-                                    <input type="button" id="scroll" value="scroll">
-                                    <label for="scroll">
-                                        <span><img src="./img/Icon/arrow_scroll.svg" alt="scroll_btn"></span>
-                                    </label>
-                                </p>
-                                <span></span>
-                            </div>
-                        </div>
+                        <aside>
+                            <p>주변 관광지</p>
+                            <nav class="btn">
+                                <button><img src="./img/Icon/icon_left_1.svg"></button>
+                                <button><img src="./img/Icon/icon_right_1.svg"></button>
+                            </nav>
+                        </aside>
                         <ul>
                             <li>
                                 <div>
@@ -168,7 +169,7 @@
                                         target="_blank">
                                         <img src="./img/주변관광지/남대문시장/namdaemun_gate.jpg" alt="숭례문(남대문)">
                                         <span class="txt">
-                                            <b>숭례문(남대문)</b>
+                                            <b>남대문(숭례문)</b>
                                             조선의 수도였던 서울의 4대문 중의 하나로
                                             남쪽의 대문으로 남대문이라고도 부른다.
                                             서울에 남아있는 목조 건물 중 가장 오래
@@ -279,7 +280,7 @@
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_001.jpg" alt="광장시장">
                     <p class="txt">
                         <b>광장시장</b>
@@ -294,8 +295,10 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">종로구
                         </span>
                     </p>
-                </div>
-                <div class="info">
+                </div> -->
+
+                <div class="popup">
+                    <span class="closer" style="cursor: pointer;">×</span>
                     <div class="info2">
                         <div>
                             <h3>광장시장</h3>
@@ -303,7 +306,7 @@
                         </div>
                         <p>
                             서울특별시 종로구 창경궁로 88,<br>
-                            흥인지문(동대문) 인근에 위치한 100여년의 역사를 지닌 대한민국 최초의 상설시장으로<br>
+                            동대문(흥인지문) 인근에 위치한 100여년의 역사를 지닌 대한민국 최초의 상설시장으로<br>
                             1호선 종로5가역, 2호선 을지로4가역이 가까이 위치해 있으며, 휴무는 일요일이고 먹자골목은 연중무휴로 운영되고 있다.<br>
                             전통의상과 장신구, 빈티지패션, 먹거리 등 다양한 볼거리가 있으며 먹거리는 육회와 빈대떡이 유명하고,<br>
                             현재 마약김밥으로 불리는 꼬마김밥은 광장시장이 발상지이다.
@@ -343,18 +346,13 @@
                     </table>
 
                     <div class="info4">
-                        <div class="tourist">
-                            <h3>주변 관광지</h3>
-                            <div class="btn">
-                                <p>
-                                    <input type="button" id="scroll" value="scroll">
-                                    <label for="scroll">
-                                        <span><img src="./img/Icon/arrow_scroll.svg" alt="scroll_btn"></span>
-                                    </label>
-                                </p>
-                                <span></span>
-                            </div>
-                        </div>
+                        <aside>
+                            <p>주변 관광지</p>
+                            <nav class="btn">
+                                <button><img src="./img/Icon/icon_left_1.svg"></button>
+                                <button><img src="./img/Icon/icon_right_1.svg"></button>
+                            </nav>
+                        </aside>
                         <ul class="travel">
                             <li>
                                 <div>
@@ -362,7 +360,7 @@
                                         target="_blank">
                                         <img src="./img/주변관광지/광장시장/dongdaemun.jpg" alt="흥인지문(동대문)">
                                         <span class="txt">
-                                            <b>흥인지문(동대문)</b>
+                                            <b>동대문(흥인지문)</b>
                                             조선의 수도였던 서울의 4대문 중의 하나로
                                             남쪽의 대문으로 남대문이라고도 부른다.
                                             서울에 남아있는 목조 건물 중 가장 오래
@@ -468,7 +466,7 @@
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_003.jpg" alt="서울약령시장">
                     <p class="txt">
                         <b>서울약령시장</b>
@@ -483,8 +481,10 @@
                         </span>
                     </p>
                     </p>
-                </div>
-                <div class="info">
+                </div> -->
+
+                <div class="popup">
+                    <span class="closer" style="cursor: pointer;">×</span>
                     <div class="info2">
                         <div>
                             <h3>서울약령시장</h3>
@@ -533,18 +533,13 @@
                     </table>
 
                     <div class="info4">
-                        <div class="tourist">
-                            <h3>주변 관광지</h3>
-                            <div class="btn">
-                                <p>
-                                    <input type="button" id="scroll" value="scroll">
-                                    <label for="scroll">
-                                        <span><img src="./img/Icon/arrow_scroll.svg" alt="scroll_btn"></span>
-                                    </label>
-                                </p>
-                                <span></span>
-                            </div>
-                        </div>
+                        <aside>
+                            <p>주변 관광지</p>
+                            <nav class="btn">
+                                <button><img src="./img/Icon/icon_left_1.svg"></button>
+                                <button><img src="./img/Icon/icon_right_1.svg"></button>
+                            </nav>
+                        </aside>
                         <ul class="travel">
                             <li>
                                 <div>
@@ -657,7 +652,7 @@
                                         target="_blank">
                                         <img src="./img/주변관광지/광장시장/dongdaemun.jpg" alt="흥인지문(동대문)">
                                         <span class="txt">
-                                            <b>흥인지문(동대문)</b>
+                                            <b>동대문(흥인지문)</b>
                                             조선의 수도였던 서울의 4대문 중의 하나로
                                             남쪽의 대문으로 남대문이라고도 부른다.
                                             서울에 남아있는 목조 건물 중 가장 오래
@@ -672,7 +667,7 @@
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_004.jpg" alt="망원시장">
                     <p class="txt">
                         <b>망원시장</b>
@@ -687,8 +682,10 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">마포구
                         </span>
                     </p>
-                </div>
-                <div class="info">
+                </div> -->
+
+                <div class="popup">
+                    <span class="closer" style="cursor: pointer;">×</span>
                     <div class="info2">
                         <div>
                             <h3>망원시장</h3>
@@ -734,18 +731,13 @@
                     </table>
 
                     <div class="info4">
-                        <div class="tourist">
-                            <h3>주변 관광지</h3>
-                            <div class="btn">
-                                <p>
-                                    <input type="button" id="scroll" value="scroll">
-                                    <label for="scroll">
-                                        <span><img src="./img/Icon/arrow_scroll.svg" alt="scroll_btn"></span>
-                                    </label>
-                                </p>
-                                <span></span>
-                            </div>
-                        </div>
+                        <aside>
+                            <p>주변 관광지</p>
+                            <nav class="btn">
+                                <button><img src="./img/Icon/icon_left_1.svg"></button>
+                                <button><img src="./img/Icon/icon_right_1.svg"></button>
+                            </nav>
+                        </aside>
                         <ul>
                             <li>
                                 <div>
@@ -819,7 +811,7 @@
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_005.jpg" alt="마장축산물시장">
                     <p class="txt">
                         <b>마장축산물시장</b>
@@ -833,11 +825,11 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">성동구
                         </span>
                     </p>
-                </div>
+                </div> -->
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_006.jpg" alt="길동복조리시장">
                     <p class="txt">
                         <b>길동복조리시장</b>
@@ -851,11 +843,11 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">강동구
                         </span>
                     </p>
-                </div>
+                </div> -->
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_007.jpg" alt="수유재래시장">
                     <p class="txt">
                         <b>수유재래시장</b>
@@ -869,11 +861,11 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">강북구
                         </span>
                     </p>
-                </div>
+                </div> -->
             </li>
 
             <li>
-                <div class="popup">
+                <!-- <div class="market-list">
                     <img src="img/시장/market_008.jpg" alt="잠실새마을전통시장">
                     <p class="txt">
                         <b>잠실 새마을전통시장</b>
@@ -887,11 +879,10 @@
                             <img src="./img/Icon/icon_map-point.svg" alt="위치">송파구
                         </span>
                     </p>
-                </div>
+                </div> -->
             </li>
         </ul>
     </div>
-
 
     <div class="bg-img02">
         <p><img src="img/background/bg_003.png" alt="artimg"></p>

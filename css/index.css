@@ -73,7 +73,7 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 10%;
     transform: translateX(-50%);
     z-index: 2;
 }
@@ -82,11 +82,12 @@
     display: block;
     color: #fff;
     font-weight: normal;
+    font-size: 30px;
 }
 
 .page1 .click img {
     margin: 0 auto;
-    width: 65%;
+    width: 80%;
     display: block;
 }
 
@@ -96,21 +97,20 @@
 .page2 {
     width: 100%;
     height: 100vh;
-    margin-top: 100px;
     margin-bottom: 200px;
-    transform: scale(0.5);
-    opacity: 0;
-    transition: 1.5s;
-}
-
-.page2.active {
-    opacity: 1;
-    transform: scale(1);
 }
 
 .page2 .visual {
     width: 100%;
     position: relative;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.page2 .visual.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .page2 .visual .bg-img>img {
@@ -412,7 +412,7 @@
     .page1 .main-title>b {
         display: block;
         font-size: 30px;
-        margin-bottom: 3%;
+        margin-bottom: 1%;
     }
 
     .page1 .main-title>span {
@@ -426,7 +426,7 @@
         text-align: center;
         position: absolute;
         left: 50%;
-        bottom: 2%;
+        bottom: 5%;
         transform: translateX(-50%);
         z-index: 2;
     }
@@ -451,22 +451,21 @@
     .page2 {
         width: 100%;
         height: 100%;
-        margin-top: 15%;
         margin-bottom: 15%;
-        transform: scale(0.5);
-        opacity: 0;
-        transition: 1s;
-    }
-
-    .page2.active {
-        opacity: 1;
-        transform: scale(1);
     }
 
     .page2 .visual {
         width: 100%;
         height: fit-content;
         position: relative;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2 .visual.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual .bg-img>img {
@@ -817,22 +816,24 @@
     .page2 {
         width: 100%;
         height: 100%;
-        margin-top: 15%;
         margin-bottom: 15%;
         transform: scale(0.5);
         opacity: 0;
         transition: 1s;
     }
 
-    .page2.active {
-        opacity: 1;
-        transform: scale(1);
-    }
-
     .page2 .visual {
         width: 100%;
         height: fit-content;
         position: relative;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2 .visual.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual .bg-img>img {
@@ -1173,22 +1174,24 @@
     .page2 {
         width: 100%;
         height: 100%;
-        margin-top: 15%;
         margin-bottom: 15%;
         transform: scale(0.5);
         opacity: 0;
         transition: 1s;
     }
 
-    .page2.active {
-        opacity: 1;
-        transform: scale(1);
-    }
-
     .page2 .visual {
         width: 100%;
         height: fit-content;
         position: relative;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .page2 .visual.active {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .page2 .visual .bg-img>img {
