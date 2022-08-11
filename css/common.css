@@ -55,7 +55,7 @@ li {
     color: #000;
     font-family: 'GangwonEduAll';
     font-weight: bold;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 
@@ -66,7 +66,7 @@ header {
     padding: 30px;
     position: fixed;
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255,255,255,0.8);
     transition: .5s;
 }
 
@@ -80,28 +80,29 @@ header.active {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    text-align: center;
     vertical-align: middle;
 }
 
-
-.top>h1 {
-    text-align: center;
+.top .logo >a {
+    display: inline-block;
 }
-
-.top>h1>a {
-    font-size: 35px;
-    color: #fff;
-}
-
-.top h1 a span {
+.top .logo >a > span{
+    display: inline-block;
     font-size: 35px;
 }
-
-.top>h1>a span:nth-child(1) {
+.top .logo >a > span:nth-child(1){
+    color: #000;
+}
+.top .logo >a > span:nth-child(2) {
     color: rgb(255, 136, 0);
 }
 
-.top>h1>a span:nth-child(2) {
+.top .logo >a> span:nth-child(3) {
     color: rgb(255, 192, 0);
 }
 
@@ -125,7 +126,6 @@ header.active {
 
 .top .menu-list {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
     margin: 0 auto;
     position: absolute;
@@ -143,7 +143,6 @@ header.active {
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: normal;
-    color: #fff;
 }
 
 .top .bar:hover .menu-list {
@@ -155,14 +154,14 @@ header.active {
 .top .menu {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     vertical-align: middle;
 }
 
 .top .menu>li {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -173,7 +172,6 @@ header.active {
     display: inline-block;
     margin: 0 auto;
     font-size: 30px;
-    color: #fff;
 }
 
 
@@ -190,7 +188,7 @@ picture {
 }
 
 picture>a>img {
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -294,57 +292,76 @@ footer .bottom .address {
 
 /* sub page */
 
-
-figure{
-    width:100%; height: 100vh;
-}
-
-figure img{
-    width:100%;
-    height: 100%;
-}
-
 .menu-title {
     width: 100%;
-    padding: 100px 0 100px;
-    background-color: #ddd;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.menu-title .main {
+.menu-title > figure{
+    width:100%;
+
+}
+
+.menu-title > figure img{
+    width:100%;
+}
+
+.menu-title .title_1{
     width: 1600px;
+    position: absolute;
+    left: 50%; top: 60%;
+    transform: translate(-50%, -50%);
+}
+.menu-title .main {
     margin: 0 auto 20px;
-    color: #000;
+    color: #fff;
     font-size: 80px;
     text-align: center;
 }
 
 .menu-title .sub {
-    width: 1600px;
     margin: 10px auto 50px;
-    color: #000;
-    font-size: 35px;
+    color: #fff;
+    font-size: 32px;
     text-align: center;
     font-weight: normal;
 }
 
 
-/* .navi_bar {
+
+
+/* 네비 */
+.navi_bar {
     width: 1600px;
     padding-bottom: 50px;
     margin: 5px auto 0;
-    vertical-align: middle;
 }
 
+.navi_bar > p{}
+
+.navi_bar > p > a{
+    display: inline-block;
+}
+
+.navi_bar>p>a>img {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+}
 .navi_bar>p>img {
-    padding: 0 5px;
+    display: inline-block;
+    padding: 5px;
+    height: 24px;
 }
 
 .navi_bar>p>span {
+    display: inline-block;
+    padding: 5px;
     font-weight: normal;
-    font-size: 17px;
-    color: #000;
-} */
-
+    font-size: 20px;
+    color: #262626;
+}
 
 
 
@@ -362,10 +379,10 @@ figure img{
 
     header {
         width: 100%;
-        padding: 0%;
+        padding: 2%;
         position: fixed;
         z-index: 99;
-        background-color: rgba(0, 0, 0,0.7);
+        background-color: rgba(255,255,255,0.8);
         transition: .5s;
     }
 
@@ -378,37 +395,39 @@ figure img{
         margin: 0 auto;
         padding: 0;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
         vertical-align: middle;
     }
 
-
-    .top>h1 {
+    .top .logo {
         text-align: center;
+        vertical-align: middle;
     }
-
-    .top>h1>a {
+    
+    .top .logo >a {
+        display: inline-block;
+    }
+    .top .logo >a > span{
+        display: inline-block;
         font-size: 20px;
-        color: #fff;
     }
-
-    .top h1 a span {
-        font-size: 20px;
+    .top .logo >a > span:nth-child(1){
+        color: #000;
     }
-
-    .top>h1>a span:nth-child(1) {
+    .top .logo >a > span:nth-child(2) {
         color: rgb(255, 136, 0);
     }
-
-    .top>h1>a span:nth-child(2) {
+    
+    .top .logo >a> span:nth-child(3) {
         color: rgb(255, 192, 0);
     }
 
 
     .top .bar {
+        width: 10%;
         display: block;
         position: relative;
-        padding-right: 25%;
     }
 
     .top .bar .trigger {
@@ -420,11 +439,10 @@ figure img{
         height: 7px;
         margin: 0 auto;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid #000;
     }
 
     .top .bar .menu-list {
-        background-color: rgba(0, 0, 0, 0.7);
         margin: 0 auto;
         padding: 10%;
         text-align: center;
@@ -474,7 +492,6 @@ figure img{
         display: inline-block;
         margin: 0 auto;
         font-size: 30px;
-        color: #fff;
     }
 
     /* top_btn */
@@ -660,7 +677,7 @@ figure img{
         padding: 3%;
         position: fixed;
         z-index: 99;
-        background-color: rgba(0, 0, 0,0.7);
+        background-color: rgba(255,255,255,0.8);
         transition: .5s;
     }
 
@@ -685,7 +702,6 @@ figure img{
 
     .top>h1>a {
         font-size: 25px;
-        color: #fff;
     }
 
     .top h1 a span {
@@ -722,7 +738,6 @@ figure img{
         display: inline-block;
         margin: 0 auto;
         font-size: 25px;
-        color: #fff;
     }
 
 
@@ -902,7 +917,7 @@ figure img{
         padding: 3%;
         position: fixed;
         z-index: 99;
-        background-color: rgba(0, 0, 0,0.7);
+        background-color: rgba(255,255,255,0.8);
         transition: .5s;
     }
 
@@ -927,7 +942,6 @@ figure img{
 
     .top>h1>a {
         font-size: 30px;
-        color: #fff;
     }
 
     .top h1 a span {
@@ -964,7 +978,6 @@ figure img{
         display: inline-block;
         margin: 0 auto;
         font-size: 30px;
-        color: #fff;
     }
 
 

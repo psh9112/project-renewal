@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        문자열 길이 제한입니다.
+        5자 이상 넘어가게되면 ...으로 처리될수 있도록
+    </div>
+    <script>
+        
+        function strFun(str,len){
+            let realStr = '';
+
+            if(str.length > len){
+                realStr = str.substring(0,len) + '...';
+            }else{
+                realStr = str;
+            }
+            return realStr;
+        }
+        let txt = $('div').text().trim();
+        console.log(txt.length)
+        $('div').text(  strFun(txt,30)  );
+    </script>
+
+    
+</body>
+</html>

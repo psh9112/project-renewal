@@ -30,8 +30,8 @@
     width: 100%;
     margin: 50px auto;
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
+    justify-content: left;
+    align-items: center;
     flex-wrap: wrap;
 }
 
