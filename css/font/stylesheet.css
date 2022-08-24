@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'GangwonEduSaeeum';
+    src: url('GangwonEduSaeeumMedium.woff2') format('woff2'),
+        url('GangwonEduSaeeumMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduHyeonokT';
+    src: url('GangwonEduHyeonokTMedium.woff2') format('woff2'),
+        url('GangwonEduHyeonokTMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduPower';
+    src: url('GangwonEduPowerExtraBold.woff2') format('woff2'),
+        url('GangwonEduPowerExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('GangwonEduAllBold.woff2') format('woff2'),
+        url('GangwonEduAllBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('GangwonEduAllLight.woff2') format('woff2'),
+        url('GangwonEduAllLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

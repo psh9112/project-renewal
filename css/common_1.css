@@ -1,0 +1,57 @@
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+
+/* sub-page */
+@media (min-width:1025px) and (max-width:1600px) {
+
+    /* sub page */
+
+    .menu-title {
+        width: 100%;
+        padding: 15px;
+        background-color: #ddd;
+        position: relative;
+    }
+
+    .menu-title .main {
+        width: 90%;
+        margin: 20px auto;
+        color: #000;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .menu-title .sub {
+        width: 90%;
+        margin: 10px auto 30px;
+        padding-bottom: 50px;
+        font-size: 23px;
+        font-weight: normal;
+        color: #000;
+        text-align: center;
+    }
+
+
+    .navi_bar {
+        width: 90%;
+        padding-bottom: 30px;
+        margin: 5px auto 0;
+        
+    }
+
+    .navi_bar>p>img {
+        padding: 0 5px;
+    }
+
+    .navi_bar>p>span {
+        font-weight: normal;
+        font-size: 18px;
+        color: #000;
+    }
+
+
+}
