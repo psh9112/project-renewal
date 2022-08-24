@@ -2,7 +2,7 @@
 let data;
 
 $.ajax({
-    url: "java/list-data.json",
+    url: "js/list-data.json",
 
     success: function (items) {
         data = items;

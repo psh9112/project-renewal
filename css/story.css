@@ -1,22 +1,4 @@
-@import url('common.css');
-
-@font-face {
-    font-family: 'GangwonEduAll';
-    src: url('./font/GangwonEduAllBold.woff2') format('woff2'),
-        url('./font/GangwonEduAllBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'GangwonEduAll';
-    src: url('./font/GangwonEduAllLight.woff2') format('woff2'),
-        url('./font/GangwonEduAllLight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('./common.css');
 
 
 /* list */
