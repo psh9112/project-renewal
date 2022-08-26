@@ -9,16 +9,17 @@
 }
 
 .list .story {
-    width: 100%;
+    width: 80%;
     margin: 50px auto;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .list .story > a {
-    width: 22%;
+    width: 30%;
+    display: block;
     margin: 50px auto;
     overflow: hidden;
 }

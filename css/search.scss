@@ -50,6 +50,10 @@
                     background-color: #999;
                     color: #fff;
                 }
+
+                &:hover{
+                    background-color: #FFCC33;
+                }
             }
         }
 
@@ -182,7 +186,7 @@
                 position: fixed;
                 left: 0;
                 top: 0;
-                z-index: 10;
+                z-index: 900;
                 overflow: hidden;
                 overflow-y: auto;
                 display: none;
@@ -195,7 +199,7 @@
                     display: block;
                 }
 
-                &.closer {
+                .closer {
                     position: fixed;
                     right: 13%;
                     top: 1%;
@@ -290,7 +294,7 @@
                     }
                 }
 
-                .popup .info4 {
+                .info4 {
                     width: 1400px;
                     overflow: hidden;
                     margin: 30px auto 0;
@@ -323,33 +327,39 @@
                         }
                     }
 
-                    >ul {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
-
-                        >li {
-                            width: 100%;
-                            margin: 0 10px;
-
-                            >div {
-                                width: 300px;
-                                border: 1px solid #aaa;
-
-                                >a {
-                                    >img {
-                                        width: 100%;
-                                    }
-
-                                    .txt {
-                                        font-size: 20px;
-                                        display: inline-block;
-                                        padding: 10px 15px;
-
-                                        >b {
-                                            font-size: 25px;
-                                            display: block;
-                                            padding: 5px 0 10px;
+                    >div{
+                        .travel {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+    
+                            >li {   
+                                width: 22%;
+                                margin: 0 10px;
+    
+                                >div {
+                                    width: 300px;
+                                    border: 1px solid #aaa;
+    
+                                    >a {
+                                        >img {
+                                            width: 100%;
+                                            border: none;
+                                        }
+    
+                                        .txt {
+                                            font-size: 20px;
+                                            display: inline-block;
+                                            padding: 10px 15px;
+                                            
+                                            >b {
+                                                font-size: 25px;
+                                                display: block;
+                                                padding: 5px 0 10px;
+                                            }
+                                            >span{
+                                                font-weight: normal;
+                                            }
                                         }
                                     }
                                 }
@@ -420,7 +430,8 @@
                 flex-shrink: 0;
 
                 >button {
-                    width: 23%; height: 5%;
+                    width: 23%;
+                    height: 5%;
                     margin: 3% auto;
                     padding: 3%;
                     display: inline-block;
@@ -486,7 +497,8 @@
                         border: none;
                         outline: none;
                         position: absolute;
-                        right: 0; top: 0;
+                        right: 0;
+                        top: 0;
                         margin-right: 10px;
                         padding-bottom: 9px;
 

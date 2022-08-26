@@ -458,6 +458,26 @@ footer {
 
 @media (min-width:1025px) and (max-width:1600px) {
 
+    // loding
+    .loding-motion {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgb(241, 242, 243);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+
+        >svg {
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
     //header
     header {
         width: 100%;
@@ -844,6 +864,27 @@ footer {
 */
 
 @media (min-width:768px) and (max-width:1024px) {
+
+    // loding
+    .loding-motion {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgb(241, 242, 243);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+
+        >svg {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 
     //header
     header {
@@ -1241,6 +1282,27 @@ footer {
 
 @media (min-width:320px) and (max-width:767px) {
 
+    // loding
+    .loding-motion {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgb(241, 242, 243);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+
+        >svg {
+            width: 30%;
+            height: 30%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
     //header
     header {
         width: 100%;
@@ -1297,6 +1359,7 @@ footer {
 
             >h1 {
                 font-size: 0;
+
                 a {
                     display: inline-block;
                     font-size: 0;

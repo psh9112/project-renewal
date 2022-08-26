@@ -35,10 +35,11 @@ function itemList() {
 
         //텍스트 100자 보여주기
         txt = $('.market-list .txt .detail').eq(k).text().trim();
-        $('.market-list .txt .detail').eq(k).text(strFun(txt, 50));
+        $('.market-list .txt .detail').eq(k).text(strFun(txt, 100));
     });
 };
 
+// 글자 수 
 function strFun(str, len) {
     let realStr = '';
 
@@ -50,10 +51,42 @@ function strFun(str, len) {
     return realStr;
 };
 
+// 팝업 열고 닫기
 $('.list > li').on('click', function () {
-    $(this).find('.popup').addClass('active');
+    
+    if (event.target.className != 'closer') {
+        $(this).find('.popup').addClass('active');
+
+        let txt;
+        $(this).find('.popup .travel > li').each(function (k) {
+            txt = $(this).find('div > a .txt span').text().trim();
+            $(this).find('div > a .txt span').text(strFun(txt, 100));
+        })
+    }
 
     $('.popup .closer').on('click', function () {
-        $('.popup').css({ 'display': 'none' });
+        $('.popup').removeClass('active');
     });
 });
+
+
+// popup > info4 > travel > slide
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3.7,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    on:{
+        slideChange:function(e){
+            // console.log(e.realIndex)
+        }
+    }
+});
+
+// popup > info4 > slide > 글자수
+
+

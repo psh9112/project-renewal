@@ -47,6 +47,9 @@
   background-color: #999;
   color: #fff;
 }
+.search-window .click .city > button:hover {
+  background-color: #FFCC33;
+}
 .search-window .click .window {
   padding: 20px;
   display: flex;
@@ -158,7 +161,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 900;
   overflow: hidden;
   overflow-y: auto;
   display: none;
@@ -169,7 +172,7 @@
 .market .list > li .popup.active {
   display: block;
 }
-.market .list > li .popup.closer {
+.market .list > li .popup .closer {
   position: fixed;
   right: 13%;
   top: 1%;
@@ -240,12 +243,12 @@
 .market .list > li .popup .info3 > tbody > tr > td {
   padding-bottom: 30px;
 }
-.market .list > li .popup .popup .info4 {
+.market .list > li .popup .info4 {
   width: 1400px;
   overflow: hidden;
   margin: 30px auto 0;
 }
-.market .list > li .popup .popup .info4 > aside {
+.market .list > li .popup .info4 > aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,45 +256,49 @@
   margin: 10px auto;
   padding: 20px;
 }
-.market .list > li .popup .popup .info4 > aside > p {
+.market .list > li .popup .info4 > aside > p {
   font-size: 30px;
   font-weight: bold;
 }
-.market .list > li .popup .popup .info4 > aside .btn > button {
+.market .list > li .popup .info4 > aside .btn > button {
   width: 50px;
   margin-left: 10px;
   outline: none;
   border: none;
   background: none;
 }
-.market .list > li .popup .popup .info4 > aside .btn > button > img {
+.market .list > li .popup .info4 > aside .btn > button > img {
   width: 100%;
 }
-.market .list > li .popup .popup .info4 > ul {
+.market .list > li .popup .info4 > div .travel {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.market .list > li .popup .popup .info4 > ul > li {
-  width: 100%;
+.market .list > li .popup .info4 > div .travel > li {
+  width: 22%;
   margin: 0 10px;
 }
-.market .list > li .popup .popup .info4 > ul > li > div {
+.market .list > li .popup .info4 > div .travel > li > div {
   width: 300px;
   border: 1px solid #aaa;
 }
-.market .list > li .popup .popup .info4 > ul > li > div > a > img {
+.market .list > li .popup .info4 > div .travel > li > div > a > img {
   width: 100%;
+  border: none;
 }
-.market .list > li .popup .popup .info4 > ul > li > div > a .txt {
+.market .list > li .popup .info4 > div .travel > li > div > a .txt {
   font-size: 20px;
   display: inline-block;
   padding: 10px 15px;
 }
-.market .list > li .popup .popup .info4 > ul > li > div > a .txt > b {
+.market .list > li .popup .info4 > div .travel > li > div > a .txt > b {
   font-size: 25px;
   display: block;
   padding: 5px 0 10px;
+}
+.market .list > li .popup .info4 > div .travel > li > div > a .txt > span {
+  font-weight: normal;
 }
 
 /*
