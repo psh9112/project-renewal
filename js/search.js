@@ -35,7 +35,7 @@ function itemList() {
 
         //텍스트 100자 보여주기
         txt = $('.market-list .txt .detail').eq(k).text().trim();
-        $('.market-list .txt .detail').eq(k).text(strFun(txt, 100));
+        $('.market-list .txt .detail').eq(k).text(strFun(txt, 80));
     });
 };
 
@@ -53,14 +53,14 @@ function strFun(str, len) {
 
 // 팝업 열고 닫기
 $('.list > li').on('click', function () {
-    
+
     if (event.target.className != 'closer') {
         $(this).find('.popup').addClass('active');
 
         let txt;
         $(this).find('.popup .travel > li').each(function (k) {
-            txt = $(this).find('div > a .txt span').text().trim();
-            $(this).find('div > a .txt span').text(strFun(txt, 100));
+            txt = $(this).find('div > a .txt > span').text().trim();
+            $(this).find('div > a .txt > span').text(strFun(txt, 80));
         })
     }
 
@@ -73,20 +73,37 @@ $('.list > li').on('click', function () {
 // popup > info4 > travel > slide
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3.7,
+    slidesPerView: 4,
     spaceBetween: 30,
     freeMode: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    on:{
-        slideChange:function(e){
+    on: {
+        slideChange: function (e) {
             // console.log(e.realIndex)
         }
+    },
+    breakpoints: {
+        // 화면의 넓이가 320px 이상일 때
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        // 화면의 넓이가 768px 이상일 때
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // 화면의 넓이가 1024px 이상일 때
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        }
     }
+
 });
 
-// popup > info4 > slide > 글자수
 
 
