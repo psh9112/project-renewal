@@ -199,11 +199,17 @@
                     display: block;
                 }
 
-                .closer {
-                    position: fixed;
-                    right: 13%;
-                    top: 1%;
-                    font-size: 50px;
+                >p {
+                    width: 1600px;
+                    margin: 0 auto;
+                    position: relative;
+
+                    .closer {
+                        position: absolute;
+                        right: 6%;
+                        top: 1%;
+                        font-size: 50px;
+                    }
                 }
 
                 .info2 {
@@ -332,6 +338,7 @@
 
                                     >a {
                                         width: 100%;
+
                                         >img {
                                             width: 100%;
                                             border: none;
@@ -340,13 +347,13 @@
                                         .txt {
                                             display: inline-block;
                                             padding: 10px 15px;
-                                            
+
                                             >b {
                                                 font-size: 20px;
                                                 display: block;
                                                 padding: 5px 0 10px;
                                             }
-                                            
+
                                             >span {
                                                 font-size: 16px;
                                                 font-weight: normal;
@@ -445,7 +452,7 @@
                     border-radius: 10px;
                     position: relative;
 
-                    
+
                     >input {
                         width: 100%;
                         height: 100%;
@@ -552,7 +559,8 @@
                             &:nth-of-type(2) {
                                 width: 30%;
                                 text-align: end;
-                                >img{
+
+                                >img {
                                     padding-right: 5px;
                                 }
                             }
@@ -572,74 +580,80 @@
                     overflow: hidden;
                     overflow-y: auto;
                     display: none;
-    
+
                     &::-webkit-scrollbar {
                         display: none;
                     }
-    
+
                     &.active {
                         display: block;
                     }
-    
-                    .closer {
-                        position: fixed;
-                        right: 5%;
-                        top: 1%;
-                        font-size: 50px;
+
+                    >p {
+                        width: 90%;
+                        margin: 0 auto;
+                        position: relative;
+
+                        .closer {
+                            position: absolute;
+                            right: 3%;
+                            top: 1%;
+                            font-size: 50px;
+                        }
                     }
-    
+
                     .info2 {
-                        width: 1400px;
+                        width: 90%;
                         margin: 0 auto 20px;
                         padding-bottom: 50px;
-    
+
                         >div {
                             width: 100%;
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
-    
+
                             >h3 {
                                 font-size: 40px;
                                 padding-right: 50px;
                                 padding-bottom: 20px;
                             }
-    
+
                             >a {
                                 font-size: 20px;
                                 font-weight: normal;
                             }
                         }
-    
+
                         >p {
                             font-size: 25px;
                         }
                     }
-    
+
                     .info3 {
-                        width: 1400px;
+                        width: 90%;
                         margin: 0 auto;
                         text-align: center;
                         border-collapse: collapse;
                         border: 1px solid #555;
-    
+
                         >caption {
                             text-align: left;
                             font-size: 30px;
                             font-weight: bold;
                             padding-bottom: 20px;
                         }
-    
+
                         >thead {
                             width: 90%;
-    
+
                             >tr {
                                 padding: 30px;
-    
+
                                 >th {
                                     font-size: 25px;
                                 }
-    
+
                                 &:nth-of-type(1) {
                                     >th {
                                         padding: 12px 0;
@@ -647,29 +661,32 @@
                                         font-size: 25px;
                                     }
                                 }
-    
+
                                 &:nth-of-type(2) {
                                     >th {
                                         font-weight: normal;
                                         padding: 20px;
                                         vertical-align: middle;
-    
+
                                         >img {
-                                            padding-right: 10px;
+                                            padding-right: 5px;
                                         }
-    
-                                        >span {}
+
+                                        >span {
+                                            display: none;
+                                        }
+
                                     }
                                 }
-    
-    
+
+
                             }
                         }
-    
+
                         >tbody {
                             width: 90%;
                             margin: 0 auto;
-    
+
                             >tr {
                                 >td {
                                     padding-bottom: 30px;
@@ -677,58 +694,59 @@
                             }
                         }
                     }
-    
+
                     .info4 {
-                        width: 1400px;
+                        width: 90%;
                         overflow: hidden;
                         margin: 30px auto 0;
-    
+
                         >aside {
                             margin: 10px auto;
                             padding: 20px;
-    
+
                             >p {
                                 font-size: 30px;
                                 font-weight: bold;
                                 flex-shrink: 0;
                             }
                         }
-    
+
                         >div {
                             width: 100%;
                             padding: 0;
-    
+
                             .travel {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: flex-start;
-    
+
                                 >li {
                                     width: 22% !important;
                                     height: 450px;
                                     margin: 0px auto;
-    
+
                                     >div {
                                         width: 100%;
                                         border: 1px solid #aaa;
-    
+
                                         >a {
                                             width: 100%;
+
                                             >img {
                                                 width: 100%;
                                                 border: none;
                                             }
-    
+
                                             .txt {
                                                 display: inline-block;
                                                 padding: 10px 15px;
-                                                
+
                                                 >b {
                                                     font-size: 20px;
                                                     display: block;
                                                     padding: 5px 0 10px;
                                                 }
-                                                
+
                                                 >span {
                                                     font-size: 16px;
                                                     font-weight: normal;
@@ -934,7 +952,8 @@
                             &:nth-of-type(2) {
                                 width: 30%;
                                 text-align: end;
-                                >img{
+
+                                >img {
                                     padding-right: 5px;
                                 }
                             }
@@ -965,12 +984,17 @@
                         display: block;
                     }
 
-                    &.closer {
-                        font-size: 30px;
-                        text-align: right;
-                        position: fixed;
-                        right: 3%;
-                        top: 1%;
+                    >p {
+                        width: 90%;
+                        margin: 0 auto;
+                        position: relative;
+
+                        .closer {
+                            position: absolute;
+                            right: 3%;
+                            top: 1%;
+                            font-size: 50px;
+                        }
                     }
 
                     .info2 {
@@ -1080,48 +1104,48 @@
                         >aside {
                             margin: 10px auto;
                             padding: 20px;
-    
+
                             >p {
                                 font-size: 22px;
                                 font-weight: bold;
                                 flex-shrink: 0;
                             }
                         }
-    
+
                         >div {
                             width: 95%;
                             padding: 0;
-    
+
                             .travel {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: flex-start;
-    
+
                                 >li {
                                     width: 43% !important;
                                     height: 450px;
                                     margin: 0px auto;
-    
+
                                     >div {
                                         width: 100%;
                                         border: 1px solid #aaa;
-    
+
                                         >a {
                                             >img {
                                                 width: 100%;
                                                 border: none;
                                             }
-    
+
                                             .txt {
                                                 display: inline-block;
                                                 padding: 10px 15px;
-                                                
+
                                                 >b {
                                                     font-size: 20px;
                                                     display: block;
                                                     padding: 5px 0 10px;
                                                 }
-                                                
+
                                                 >span {
                                                     font-size: 16px;
                                                     font-weight: normal;
@@ -1328,7 +1352,8 @@
                             &:nth-of-type(2) {
                                 width: 30%;
                                 text-align: end;
-                                >img{
+
+                                >img {
                                     padding-right: 5px;
                                 }
                             }
@@ -1358,12 +1383,17 @@
                         display: block;
                     }
 
-                    &.closer {
-                        font-size: 30px;
-                        text-align: right;
-                        position: fixed;
-                        right: 1%;
-                        top: 1%;
+                    >p {
+                        width: 90%;
+                        margin: 0 auto;
+                        position: relative;
+
+                        .closer {
+                            position: absolute;
+                            right: 1%;
+                            top: 1%;
+                            font-size: 50px;
+                        }
                     }
 
                     .info2 {
@@ -1473,48 +1503,48 @@
                         >aside {
                             margin: 10px auto;
                             padding: 20px;
-    
+
                             >p {
                                 font-size: 16px;
                                 font-weight: bold;
                                 flex-shrink: 0;
                             }
                         }
-    
+
                         >div {
                             width: 95%;
                             padding: 0;
-    
+
                             .travel {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: flex-start;
-    
+
                                 >li {
                                     width: 43% !important;
                                     height: 450px;
                                     margin: 0px auto;
-    
+
                                     >div {
                                         width: 100%;
                                         border: 1px solid #aaa;
-    
+
                                         >a {
                                             >img {
                                                 width: 100%;
                                                 border: none;
                                             }
-    
+
                                             .txt {
                                                 display: inline-block;
                                                 padding: 10px 15px;
-                                                
+
                                                 >b {
                                                     font-size: 20px;
                                                     display: block;
                                                     padding: 5px 0 10px;
                                                 }
-                                                
+
                                                 >span {
                                                     font-size: 16px;
                                                     font-weight: normal;

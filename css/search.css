@@ -172,9 +172,14 @@
 .market .list > li .popup.active {
   display: block;
 }
-.market .list > li .popup .closer {
-  position: fixed;
-  right: 13%;
+.market .list > li .popup > p {
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+.market .list > li .popup > p .closer {
+  position: absolute;
+  right: 6%;
   top: 1%;
   font-size: 50px;
 }
@@ -481,14 +486,19 @@
   .market .list > li .popup.active {
     display: block;
   }
-  .market .list > li .popup .closer {
-    position: fixed;
-    right: 5%;
+  .market .list > li .popup > p {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .market .list > li .popup > p .closer {
+    position: absolute;
+    right: 3%;
     top: 1%;
     font-size: 50px;
   }
   .market .list > li .popup .info2 {
-    width: 1400px;
+    width: 90%;
     margin: 0 auto 20px;
     padding-bottom: 50px;
   }
@@ -511,7 +521,7 @@
     font-size: 25px;
   }
   .market .list > li .popup .info3 {
-    width: 1400px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -543,7 +553,10 @@
     vertical-align: middle;
   }
   .market .list > li .popup .info3 > thead > tr:nth-of-type(2) > th > img {
-    padding-right: 10px;
+    padding-right: 5px;
+  }
+  .market .list > li .popup .info3 > thead > tr:nth-of-type(2) > th > span {
+    display: none;
   }
   .market .list > li .popup .info3 > tbody {
     width: 90%;
@@ -553,7 +566,7 @@
     padding-bottom: 30px;
   }
   .market .list > li .popup .info4 {
-    width: 1400px;
+    width: 90%;
     overflow: hidden;
     margin: 30px auto 0;
   }
@@ -793,12 +806,16 @@
   .market .list > li .popup.active {
     display: block;
   }
-  .market .list > li .popup.closer {
-    font-size: 30px;
-    text-align: right;
-    position: fixed;
+  .market .list > li .popup > p {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .market .list > li .popup > p .closer {
+    position: absolute;
     right: 3%;
     top: 1%;
+    font-size: 50px;
   }
   .market .list > li .popup .info2 {
     width: 95%;
@@ -1113,12 +1130,16 @@
   .market .list > li .popup.active {
     display: block;
   }
-  .market .list > li .popup.closer {
-    font-size: 30px;
-    text-align: right;
-    position: fixed;
+  .market .list > li .popup > p {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .market .list > li .popup > p .closer {
+    position: absolute;
     right: 1%;
     top: 1%;
+    font-size: 50px;
   }
   .market .list > li .popup .info2 {
     width: 100%;
