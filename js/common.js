@@ -7,8 +7,6 @@ $('nav').load('inc.html nav .navigator', navFn);
 
 // header
 
-// http://itsjuheee.dothome.co.kr/
-
 let scrollState = { y: 0, y2: 0, state: 'down' };
 
 function scrollFun() {
